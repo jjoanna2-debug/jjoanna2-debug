@@ -1,4 +1,4 @@
-# Jean-Claude
+# Jean-Claude Joanna
 
 I am learning GitHub in public, one small repo at a time.
 
@@ -25,4 +25,4 @@ It is where I am learning how a public repository is structured, how commits sho
 - how to use AI help without pretending I know everything already;
 - what I actually want to build next.
 
-Small steps count. This profile is part of the practice.
+Small steps count. This profile is part of the practice :D
