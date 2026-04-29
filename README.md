@@ -10,7 +10,7 @@ Right now I am using this profile as a clean starting point while I practice:
 - pull requests;
 - documentation;
 - public repo hygiene;
-- AI-assisted workflows.
+- practical assisted coding workflows.
 
 ## Current Lab
 
@@ -22,7 +22,7 @@ It is where I am learning how a public repository is structured, how commits sho
 
 - how to make repositories that are clear from the first page;
 - how to keep public projects safe, boring, and well-labeled;
-- how to use AI help without making the project feel fake;
+- how to use helpful tools while keeping the work clear and grounded;
 - what I actually want to build next.
 
 Small steps count. This profile is part of the practice :D
