@@ -1,28 +1,30 @@
 # Jean-Claude Joanna
 
-I am learning GitHub in public, one small repo at a time.
+I build in public and keep the work readable.
 
-Right now I am using this profile as a clean starting point while I practice:
+Right now this profile is my GitHub lab: small repos, clean docs, checked-in proof, and practical assisted coding workflows that stay grounded in real tests instead of big promises.
 
-- repositories;
-- commits;
-- branches;
-- pull requests;
-- documentation;
-- public repo hygiene;
-- practical assisted coding workflows.
+## What I Care About
+
+- clear first pages that make a repo easy to trust;
+- boring public hygiene: licenses, security notes, support paths, issue templates, and CI;
+- small patches with proof, not giant mystery drops;
+- writing that feels human and useful;
+- learning fast without making the workspace messy.
 
 ## Current Lab
 
-[test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) is my beginner-friendly GitHub practice repo.
+[test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) is my public practice repo.
 
-It is where I am learning how a public repository is structured, how commits show up, how issue templates work, how GitHub Actions checks run, and how documentation keeps a project understandable.
+It is deliberately small: a Rust starter, GitHub Actions checks, issue templates, repo policy files, local doctor scripts, and documentation for how the project is organized. The point is not to look huge. The point is to make the basics clean enough that someone can open it and understand what is going on.
 
-## What I Am Figuring Out
+## Recent Focus
 
-- how to make repositories that are clear from the first page;
-- how to keep public projects safe, boring, and well-labeled;
-- how to use helpful tools while keeping the work clear and grounded;
-- what I actually want to build next.
+- tightening repository structure checks;
+- keeping CI simple and honest;
+- documenting local setup and GitHub workflow habits;
+- using assisted coding tools while keeping authorship, review, and verification explicit.
 
-Small steps count. This profile is part of the practice :D
+## Connect
+
+I like practical builders, careful reviewers, and people who enjoy turning messy first drafts into something shippable. If that sounds like your lane, say hi.
