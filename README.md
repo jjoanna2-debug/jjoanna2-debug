@@ -2,12 +2,12 @@
 
 I build in public and keep the work readable.
 
-Right now this profile is my GitHub lab: small repos, clean docs, checked-in proof, and practical assisted coding workflows that stay grounded in real tests instead of big promises.
+Right now this account is my GitHub lab: small repos, clean docs, checked-in proof, and practical assisted coding workflows that stay grounded in real tests instead of big promises.
 
 ## What I Care About
 
 - clear first pages that make a repo easy to trust;
-- boring public hygiene: licenses, security notes, support paths, issue templates, and CI;
+- boring public hygiene in the repos that need it: licenses, security notes, support paths, issue templates, and CI;
 - small patches with proof, not giant mystery drops;
 - writing that feels human and useful;
 - learning fast without making the workspace messy.
