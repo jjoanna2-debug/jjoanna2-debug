@@ -1,8 +1,14 @@
 # Jean-Claude Joanna
 
-I build in public and keep the work readable.
+I build in public and keep the work readable, testable, and easy to trust.
 
 Right now this account is my GitHub lab: small repos, clean docs, checked-in proof, and practical assisted coding workflows that stay grounded in real tests instead of big promises.
+
+## What To Look At
+
+- [test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) - a small Rust practice repo with CI, local checks, issue templates, and public repo hygiene.
+- Open-source pull requests - scoped patches, green checks, and proof-first descriptions.
+- This profile - the home base for current experiments, cleanup work, and public learning.
 
 ## What I Care About
 
@@ -20,6 +26,7 @@ It is deliberately small: a Rust starter, GitHub Actions checks, issue templates
 
 ## Recent Focus
 
+- making the profile itself a useful entry point instead of a billboard;
 - tightening repository structure checks;
 - keeping CI simple and honest;
 - documenting local setup and GitHub workflow habits;
@@ -27,4 +34,6 @@ It is deliberately small: a Rust starter, GitHub Actions checks, issue templates
 
 ## Connect
 
-I like practical builders, careful reviewers, and people who enjoy turning messy first drafts into something shippable. If that sounds like your lane, say hi.
+I like practical builders, careful reviewers, and people who enjoy turning messy first drafts into something shippable.
+
+The best starting point is this GitHub profile: [github.com/jjoanna2-debug](https://github.com/jjoanna2-debug). If the work here feels aligned, say hi through the contact path where you found me.
