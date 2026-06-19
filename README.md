@@ -7,11 +7,15 @@ This account is my GitHub lab: small repos, clean docs, checked-in proof, and
 practical assisted-coding workflows that stay grounded in real tests instead of
 big promises.
 
+Right now the main public signal is simple: keep the lab Rust-first, keep the
+checks honest, and remove stale work instead of letting it blur the picture.
+
 ## What To Look At
 
 - [test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) - a
-  small Rust practice repo with CI, local checks, issue templates, and public
-  repo hygiene.
+  small Rust practice repo with CI, a Rust-native repository doctor, pinned
+  workflow actions, secret/evidence guardrails, issue templates, and public repo
+  hygiene.
 - Open-source pull requests - scoped patches, green checks, and proof-first
   descriptions.
 - This profile - the home base for current experiments, cleanup work, and public
@@ -22,6 +26,8 @@ big promises.
 - clear first pages that make a repo easy to trust;
 - boring public hygiene in the repos that need it: licenses, security notes,
   support paths, issue templates, and CI;
+- guardrails that fail closed before secrets, private files, or sloppy workflows
+  become public history;
 - small patches with proof, not giant mystery drops;
 - writing that feels human and useful;
 - learning fast without making the workspace messy.
@@ -32,16 +38,19 @@ big promises.
 public practice repo.
 
 It is deliberately small: a Rust starter, GitHub Actions checks, issue
-templates, repo policy files, local doctor scripts, and documentation for how
-the project is organized. The point is not to look huge. The point is to make
-the basics clean enough that someone can open it and understand what is going
-on.
+templates, repo policy files, a Rust-native repository doctor, and documentation
+for how the project is organized. The point is not to look huge. The point is to
+make the basics clean enough that someone can open it and understand what is
+going on.
 
 ## Recent Focus
 
 - making the profile itself a useful entry point instead of a billboard;
-- tightening repository structure checks and cleanup habits;
-- keeping CI simple and honest;
+- keeping the main lab Rust-first instead of accidentally letting helper code
+  define the repo;
+- tightening repository structure checks, secret/evidence guardrails, and cleanup
+  habits;
+- keeping CI simple, pinned, and honest;
 - documenting local setup and GitHub workflow habits;
 - using assisted coding tools while keeping authorship, review, and
   verification explicit.
