@@ -45,6 +45,10 @@ going on.
 
 ## Recent Focus
 
+- landing approved and merged GoalBuddy Codex-runtime patches:
+  [#28](https://github.com/tolibear/goalbuddy/pull/28),
+  [#29](https://github.com/tolibear/goalbuddy/pull/29), and
+  [#30](https://github.com/tolibear/goalbuddy/pull/30);
 - landing a merged Snapzy macOS patch for Quick Access dismiss lag
   ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
   included before the `v1.23.0` release line;
