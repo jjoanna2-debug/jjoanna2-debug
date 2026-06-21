@@ -45,6 +45,9 @@ going on.
 
 ## Recent Focus
 
+- landing a merged Snapzy macOS patch for Quick Access dismiss lag
+  ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
+  included before the `v1.23.0` release line;
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
