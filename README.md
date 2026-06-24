@@ -49,6 +49,10 @@ going on.
   [#28](https://github.com/tolibear/goalbuddy/pull/28),
   [#29](https://github.com/tolibear/goalbuddy/pull/29), and
   [#30](https://github.com/tolibear/goalbuddy/pull/30);
+- landing a merged GoalBuddy local-board rendering fix for multiple active tasks
+  ([tolibear/goalbuddy#34](https://github.com/tolibear/goalbuddy/pull/34));
+- landing a merged liteparse batch-output directory fix
+  ([run-llama/liteparse#313](https://github.com/run-llama/liteparse/pull/313));
 - landing a merged Snapzy macOS patch for Quick Access dismiss lag
   ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
   included before the `v1.23.0` release line;
