@@ -56,6 +56,8 @@ going on.
 - landing a merged Snapzy macOS patch for Quick Access dismiss lag
   ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
   included before the `v1.23.0` release line;
+- landing an approved and merged markdown-preview Quick Look containment fix
+  ([pluk-inc/markdown-preview#152](https://github.com/pluk-inc/markdown-preview/pull/152));
 - landing a merged Impeccable live-mode toast race fix
   ([pbakaus/impeccable#271](https://github.com/pbakaus/impeccable/pull/271));
 - making the profile itself a useful entry point instead of a billboard;
