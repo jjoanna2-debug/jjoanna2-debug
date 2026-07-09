@@ -45,6 +45,8 @@ going on.
 
 ## Recent Focus
 
+Nine external pull requests have now merged across five open-source projects:
+
 - landing approved and merged GoalBuddy Codex-runtime patches:
   [#28](https://github.com/tolibear/goalbuddy/pull/28),
   [#29](https://github.com/tolibear/goalbuddy/pull/29), and
@@ -56,8 +58,13 @@ going on.
 - landing a merged Snapzy macOS patch for Quick Access dismiss lag
   ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
   included before the `v1.23.0` release line;
-- landing an approved and merged markdown-preview Quick Look containment fix
-  ([pluk-inc/markdown-preview#152](https://github.com/pluk-inc/markdown-preview/pull/152));
+- landing two approved and merged markdown-preview improvements: Quick Look
+  asset containment
+  ([pluk-inc/markdown-preview#152](https://github.com/pluk-inc/markdown-preview/pull/152))
+  and native trackpad pinch zoom
+  ([pluk-inc/markdown-preview#156](https://github.com/pluk-inc/markdown-preview/pull/156)),
+  both included in
+  [release 0.0.29](https://github.com/pluk-inc/markdown-preview/pull/160);
 - landing a merged Impeccable live-mode toast race fix
   ([pbakaus/impeccable#271](https://github.com/pbakaus/impeccable/pull/271));
 - making the profile itself a useful entry point instead of a billboard;
