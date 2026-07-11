@@ -45,8 +45,13 @@ going on.
 
 ## Recent Focus
 
-Nine external pull requests have now merged across five open-source projects:
+Ten external pull requests have now merged across six open-source projects:
 
+- landing a merged documentation and accessibility-guidance pass for
+  make-interfaces-feel-better
+  ([jakubkrehel/make-interfaces-feel-better#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1)),
+  covering Codex installation, font-family scope, context-specific hit areas,
+  and a machine-detectable MIT license;
 - landing approved and merged GoalBuddy Codex-runtime patches:
   [#28](https://github.com/tolibear/goalbuddy/pull/28),
   [#29](https://github.com/tolibear/goalbuddy/pull/29), and
