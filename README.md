@@ -82,6 +82,26 @@ Ten external pull requests have now merged across six open-source projects:
 - using assisted coding tools while keeping authorship, review, and
   verification explicit.
 
+## Current Open Work
+
+As of July 12, 2026, six external pull requests are open and tracked against
+their live upstream state:
+
+- fixing edit-mode selection overflow in Markdown Preview with sanitized
+  before/after evidence and a green Swift test run
+  ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185));
+- preventing a native macOS Transmission quit hang while keeping the sharing
+  integration aligned with AppKit
+  ([transmission/transmission#8984](https://github.com/transmission/transmission/pull/8984));
+- correcting IINA's Open URL failure message, playlist-relative paths, and
+  plugin default-branch update checks
+  ([#6189](https://github.com/iina/iina/pull/6189),
+  [#6190](https://github.com/iina/iina/pull/6190), and
+  [#6191](https://github.com/iina/iina/pull/6191));
+- extending Daytona's Sapat provider guide with current registry architecture,
+  validation, and security boundaries
+  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181)).
+
 ## How I Work
 
 - I keep changes small enough to review.
