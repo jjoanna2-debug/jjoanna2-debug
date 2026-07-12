@@ -87,8 +87,9 @@ Ten external pull requests have now merged across six open-source projects:
 As of July 12, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
-- fixing edit-mode selection overflow in Markdown Preview with sanitized
-  before/after evidence and a green Swift test run
+- restoring Markdown Preview's native edit-mode caret and glyph-tight text
+  selection, with corrected editor geometry, sanitized visual evidence, and a
+  green Swift test run
   ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185));
 - preventing a native macOS Transmission quit hang while keeping the sharing
   integration aligned with AppKit
