@@ -84,15 +84,17 @@ Ten external pull requests have now merged across six open-source projects:
 
 ## Current Open Work
 
-As of July 12, 2026, six external pull requests are open and tracked against
+As of July 13, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
 - restoring Markdown Preview's native text selection in both edit and read
   modes, including standard Shift-arrow range extension, corrected editor
   geometry, sanitized visual evidence, and a green Swift test run
   ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185));
-- preventing a native macOS Transmission quit hang while keeping the sharing
-  integration aligned with AppKit
+- preventing a native macOS Transmission quit hang by moving blocking UPnP
+  gateway validation off the session thread, with an independent field report
+  corroborating the automatic-port-mapping path and all review nits resolved,
+  while keeping the sharing integration aligned with AppKit
   ([transmission/transmission#8984](https://github.com/transmission/transmission/pull/8984));
 - correcting IINA's Open URL failure message, playlist-relative paths, and
   plugin default-branch update checks
