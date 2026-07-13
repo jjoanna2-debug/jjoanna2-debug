@@ -87,9 +87,10 @@ Ten external pull requests have now merged across six open-source projects:
 As of July 13, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
-- restoring Markdown Preview's native text selection in both edit and read
-  modes, including standard Shift-arrow range extension, corrected editor
-  geometry, sanitized visual evidence, and a green Swift test run
+- preserving Markdown Preview's full-document edit selection across virtualized
+  large files, keeping range selections in rendered form across Markdown and
+  fenced code, and restoring standard read-mode Shift-arrow range extension,
+  with corrected editor geometry and sanitized native-app evidence
   ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
