@@ -45,7 +45,7 @@ going on.
 
 ## Recent Focus
 
-Ten external pull requests have now merged across six open-source projects:
+Eleven external pull requests have now merged across six open-source projects:
 
 - landing a merged documentation and accessibility-guidance pass for
   make-interfaces-feel-better
@@ -63,13 +63,18 @@ Ten external pull requests have now merged across six open-source projects:
 - landing a merged Snapzy macOS patch for Quick Access dismiss lag
   ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
   included before the `v1.23.0` release line;
-- landing two approved and merged markdown-preview improvements: Quick Look
+- landing three approved and merged Markdown Preview improvements: Quick Look
   asset containment
   ([pluk-inc/markdown-preview#152](https://github.com/pluk-inc/markdown-preview/pull/152))
   and native trackpad pinch zoom
   ([pluk-inc/markdown-preview#156](https://github.com/pluk-inc/markdown-preview/pull/156)),
   both included in
-  [release 0.0.29](https://github.com/pluk-inc/markdown-preview/pull/160);
+  [release 0.0.29](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.29),
+  plus reliable full-document selection in long edit-mode files and standard
+  Shift-selection in read mode
+  ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185)),
+  credited in
+  [release 0.0.34](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.34);
 - landing a merged Impeccable live-mode toast race fix
   ([pbakaus/impeccable#271](https://github.com/pbakaus/impeccable/pull/271));
 - making the profile itself a useful entry point instead of a billboard;
@@ -84,14 +89,9 @@ Ten external pull requests have now merged across six open-source projects:
 
 ## Current Open Work
 
-As of July 13, 2026, six external pull requests are open and tracked against
+As of July 13, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
-- preserving Markdown Preview's full-document edit selection across virtualized
-  large files, keeping range selections in rendered form across Markdown and
-  fenced code, and restoring standard read-mode Shift-arrow range extension,
-  with corrected editor geometry and sanitized native-app evidence
-  ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
   corroborating the automatic-port-mapping path and all review nits resolved,
