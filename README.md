@@ -45,7 +45,7 @@ going on.
 
 ## Recent Focus
 
-Eleven external pull requests have now merged across six open-source projects:
+Twelve external pull requests have now merged across seven open-source projects:
 
 - landing a merged documentation and accessibility-guidance pass for
   make-interfaces-feel-better
@@ -77,6 +77,13 @@ Eleven external pull requests have now merged across six open-source projects:
   [release 0.0.34](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.34);
 - landing a merged Impeccable live-mode toast race fix
   ([pbakaus/impeccable#271](https://github.com/pbakaus/impeccable/pull/271));
+- shipping the Apple Mail MCP v2.8.10 hardening pass
+  ([sweetrb/apple-mail-mcp#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)),
+  covering account-bound IMAP operations, SMTP sender allowlisting, bounded
+  inline attachments, and canonicalized attachment-save containment; the owner
+  verified 392 unit tests, 47 integration tests, and a reproducible bundle
+  before publishing
+  [release v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10);
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
@@ -89,7 +96,7 @@ Eleven external pull requests have now merged across six open-source projects:
 
 ## Current Open Work
 
-As of July 18, 2026, six external pull requests are open and tracked against
+As of July 18, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
@@ -104,10 +111,7 @@ their live upstream state:
   [#6191](https://github.com/iina/iina/pull/6191));
 - extending Daytona's Sapat provider guide with current registry architecture,
   validation, and security boundaries
-  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181));
-- hardening Apple Mail MCP message and attachment operation boundaries, with
-  full unit, coverage, live Mail.app, GreenMail IMAP, build, and audit proof
-  ([sweetrb/apple-mail-mcp#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)).
+  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181)).
 
 ## How I Work
 
