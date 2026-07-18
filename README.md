@@ -89,7 +89,7 @@ Eleven external pull requests have now merged across six open-source projects:
 
 ## Current Open Work
 
-As of July 13, 2026, five external pull requests are open and tracked against
+As of July 18, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
@@ -104,7 +104,10 @@ their live upstream state:
   [#6191](https://github.com/iina/iina/pull/6191));
 - extending Daytona's Sapat provider guide with current registry architecture,
   validation, and security boundaries
-  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181)).
+  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181));
+- hardening Apple Mail MCP message and attachment operation boundaries, with
+  full unit, coverage, live Mail.app, GreenMail IMAP, build, and audit proof
+  ([sweetrb/apple-mail-mcp#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)).
 
 ## How I Work
 
