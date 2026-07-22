@@ -96,7 +96,7 @@ Twelve external pull requests have now merged across seven open-source projects:
 
 ## Current Open Work
 
-As of July 18, 2026, five external pull requests are open and tracked against
+As of July 22, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
@@ -112,6 +112,28 @@ their live upstream state:
 - extending Daytona's Sapat provider guide with current registry architecture,
   validation, and security boundaries
   ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181)).
+
+## Current Product Reports
+
+I also keep evidence-bounded product reports current instead of treating issue
+filing as the finish line. Four active Codex reports now include focused
+July 22 routing requests to maintainers with demonstrated subsystem ownership:
+
+- ChatGPT Desktop resetting the bundled Computer Use MCP server to disabled
+  while the plugin remains enabled
+  ([openai/codex#34807](https://github.com/openai/codex/issues/34807));
+- a completed Codex Security scan becoming impossible to close after its
+  app-managed temporary artifacts disappear
+  ([openai/codex#33994](https://github.com/openai/codex/issues/33994));
+- the official LinkedIn connector returning an upstream `403 IP not authorized`
+  and then masking it with a template-loading failure
+  ([openai/codex#33951](https://github.com/openai/codex/issues/33951));
+- mobile Remote Control retaining stale or offline state while host-side work
+  and events continue
+  ([openai/codex#22773](https://github.com/openai/codex/issues/22773)).
+
+These reports remain open. The profile records the verified state and does not
+present routing requests as acknowledgements or fixes.
 
 ## How I Work
 
