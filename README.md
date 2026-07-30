@@ -96,9 +96,14 @@ Twelve external pull requests have now merged across seven open-source projects:
 
 ## Current Open Work
 
-As of July 22, 2026, five external pull requests are open and tracked against
+As of July 30, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
+- pinning the API-compatible `brace-expansion@1.1.17` security backport in
+  Apple Mail MCP's lint toolchain without hiding the advisory, after the full
+  408-test suite, build, lint, typecheck, formatting, compatibility probe,
+  bounded reproduction, and scoped security review passed
+  ([sweetrb/apple-mail-mcp#119](https://github.com/sweetrb/apple-mail-mcp/pull/119));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
   corroborating the automatic-port-mapping path and all review nits resolved,
