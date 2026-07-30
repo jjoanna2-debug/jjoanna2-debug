@@ -45,7 +45,8 @@ going on.
 
 ## Recent Focus
 
-Twelve external pull requests have now merged across seven open-source projects:
+Thirteen external pull requests have now merged across seven open-source
+projects:
 
 - landing a merged documentation and accessibility-guidance pass for
   make-interfaces-feel-better
@@ -84,6 +85,13 @@ Twelve external pull requests have now merged across seven open-source projects:
   verified 392 unit tests, 47 integration tests, and a reproducible bundle
   before publishing
   [release v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10);
+- landing Apple Mail MCP's API-compatible `brace-expansion` v1 hardening
+  ([sweetrb/apple-mail-mcp#119](https://github.com/sweetrb/apple-mail-mcp/pull/119))
+  without suppressing the advisory or forcing an incompatible major version
+  through ESLint's dependency path; the corrected public record identifies the
+  merged versions as partial mitigation and links upstream issue
+  [#121](https://github.com/sweetrb/apple-mail-mcp/issues/121) for the complete
+  sequence-bound releases after the repository's supply-chain age gate;
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
@@ -96,14 +104,9 @@ Twelve external pull requests have now merged across seven open-source projects:
 
 ## Current Open Work
 
-As of July 30, 2026, six external pull requests are open and tracked against
+As of July 30, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
-- pinning the API-compatible `brace-expansion@1.1.17` security backport in
-  Apple Mail MCP's lint toolchain without hiding the advisory, after the full
-  408-test suite, build, lint, typecheck, formatting, compatibility probe,
-  bounded reproduction, and scoped security review passed
-  ([sweetrb/apple-mail-mcp#119](https://github.com/sweetrb/apple-mail-mcp/pull/119));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
   corroborating the automatic-port-mapping path and all review nits resolved,
