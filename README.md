@@ -104,9 +104,14 @@ projects:
 
 ## Current Open Work
 
-As of July 30, 2026, five external pull requests are open and tracked against
+As of July 31, 2026, six external pull requests are open and tracked against
 their live upstream state:
 
+- completing Apple Mail MCP's dev-only `brace-expansion` sequence bounds on
+  both the CommonJS-compatible v1 and independent v5 paths after the repository
+  release-age gate cleared, with all public checks passing and shipped bytes
+  unchanged
+  ([sweetrb/apple-mail-mcp#123](https://github.com/sweetrb/apple-mail-mcp/pull/123));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
   corroborating the automatic-port-mapping path and all review nits resolved,
