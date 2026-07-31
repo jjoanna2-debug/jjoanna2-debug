@@ -45,7 +45,7 @@ going on.
 
 ## Recent Focus
 
-Thirteen external pull requests have now merged across seven open-source
+Fourteen external pull requests have now merged across seven open-source
 projects:
 
 - landing a merged documentation and accessibility-guidance pass for
@@ -85,13 +85,16 @@ projects:
   verified 392 unit tests, 47 integration tests, and a reproducible bundle
   before publishing
   [release v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10);
-- landing Apple Mail MCP's API-compatible `brace-expansion` v1 hardening
+- completing Apple Mail MCP's dev-only `brace-expansion` remediation in two
+  evidence-backed steps: API-compatible v1 hardening
   ([sweetrb/apple-mail-mcp#119](https://github.com/sweetrb/apple-mail-mcp/pull/119))
   without suppressing the advisory or forcing an incompatible major version
-  through ESLint's dependency path; the corrected public record identifies the
-  merged versions as partial mitigation and links upstream issue
-  [#121](https://github.com/sweetrb/apple-mail-mcp/issues/121) for the complete
-  sequence-bound releases after the repository's supply-chain age gate;
+  through ESLint's dependency path, followed by the complete v1/v5 sequence
+  bounds after the repository's supply-chain age gate
+  ([sweetrb/apple-mail-mcp#123](https://github.com/sweetrb/apple-mail-mcp/pull/123));
+  the owner credited the 10,000-zero reproduction as decisive proof, added an
+  independent v5 floor, and ported the remediation to Apple Notes, Numbers,
+  and Photos;
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
@@ -104,14 +107,9 @@ projects:
 
 ## Current Open Work
 
-As of July 31, 2026, six external pull requests are open and tracked against
+As of July 31, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
-- completing Apple Mail MCP's dev-only `brace-expansion` sequence bounds on
-  both the CommonJS-compatible v1 and independent v5 paths after the repository
-  release-age gate cleared, with all public checks passing and shipped bytes
-  unchanged
-  ([sweetrb/apple-mail-mcp#123](https://github.com/sweetrb/apple-mail-mcp/pull/123));
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread, with an independent field report
   corroborating the automatic-port-mapping path and all review nits resolved,
