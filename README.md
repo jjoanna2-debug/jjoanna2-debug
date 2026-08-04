@@ -93,8 +93,16 @@ projects:
   bounds after the repository's supply-chain age gate
   ([sweetrb/apple-mail-mcp#123](https://github.com/sweetrb/apple-mail-mcp/pull/123));
   the owner credited the 10,000-zero reproduction as decisive proof, added an
-  independent v5 floor, and ported the remediation to Apple Notes, Numbers,
-  and Photos;
+  independent v5 floor, and explicitly credited the original finding while
+  porting it to
+  [Apple Notes #113](https://github.com/sweetrb/apple-notes-mcp/pull/113),
+  [Apple Numbers #49](https://github.com/sweetrb/apple-numbers-mcp/pull/49), and
+  [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60). The
+  credit now appears in all four repositories' changelogs, and the downstream
+  fix has shipped in
+  [Apple Numbers v1.1.12](https://github.com/sweetrb/apple-numbers-mcp/releases/tag/v1.1.12)
+  and
+  [Apple Photos v2.1.6](https://github.com/sweetrb/apple-photos-mcp/releases/tag/v2.1.6);
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
