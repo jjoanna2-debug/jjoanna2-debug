@@ -115,13 +115,13 @@ projects:
 
 ## Current Open Work
 
-As of July 31, 2026, five external pull requests are open and tracked against
+As of August 4, 2026, five external pull requests are open and tracked against
 their live upstream state:
 
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
-  gateway validation off the session thread, with an independent field report
-  corroborating the automatic-port-mapping path and all review nits resolved,
-  while keeping the sharing integration aligned with AppKit
+  gateway validation off the session thread; the August 2 revision is rebased,
+  narrowed to the single UPnP source file, and validated by 583 tests plus a
+  universal arm64/x86_64 macOS build
   ([transmission/transmission#8984](https://github.com/transmission/transmission/pull/8984));
 - correcting IINA's Open URL failure message, playlist-relative paths, and
   plugin default-branch update checks
@@ -135,8 +135,9 @@ their live upstream state:
 ## Current Product Reports
 
 I also keep evidence-bounded product reports current instead of treating issue
-filing as the finish line. Four active Codex reports now include focused
-July 22 routing requests to maintainers with demonstrated subsystem ownership:
+filing as the finish line. As of August 4, four Codex reports remain open after
+focused July 22 routing requests to maintainers with demonstrated subsystem
+ownership:
 
 - ChatGPT Desktop resetting the bundled Computer Use MCP server to disabled
   while the plugin remains enabled
@@ -151,8 +152,8 @@ July 22 routing requests to maintainers with demonstrated subsystem ownership:
   and events continue
   ([openai/codex#22773](https://github.com/openai/codex/issues/22773)).
 
-These reports remain open. The profile records the verified state and does not
-present routing requests as acknowledgements or fixes.
+None has received a maintainer response. The profile records that verified
+state and does not present routing requests as acknowledgements or fixes.
 
 ## How I Work
 
