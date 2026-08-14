@@ -115,8 +115,30 @@ projects:
 
 ## Current Open Work
 
-As of August 4, 2026, five external pull requests are open and tracked against
-their live upstream state:
+As of August 14, 2026, seventeen external pull requests are open and tracked
+against their live upstream state. The twelve Apple Mail MCP entries are all
+open, Ready for review, mergeable, and required-check green; they are not
+merged, shipped, accepted, or maintainer-approved.
+
+Apple Mail MCP runtime hardening:
+
+- numeric batch scope is required to stay atomic ([#159](https://github.com/sweetrb/apple-mail-mcp/pull/159), head `2b3244dd9afe1d253d1649627766aa62eedff0ee`; local 40 files/573 tests);
+- ambiguous message IDs are refused ([#160](https://github.com/sweetrb/apple-mail-mcp/pull/160), head `1e303bc6f30a248f431e3cec7d33741eeb7735df`; local 41/575);
+- attachment overwrites are prevented ([#161](https://github.com/sweetrb/apple-mail-mcp/pull/161), final head `d8c813c53c444c745558371c63063926d519b776`; local 40/575; fresh CodeQL reports no new alerts);
+- IMAP attachment fetches are capped ([#162](https://github.com/sweetrb/apple-mail-mcp/pull/162), head `714925fbf685f3277b4a7d5bb9201c95e2df2a3d`; local 40/575);
+- IMAP deletes remain recoverable ([#163](https://github.com/sweetrb/apple-mail-mcp/pull/163), head `5c7512d6c27f1323f57aa9ef7505247e69f0011f`; local 40/574);
+- new mail rules default to disabled ([#164](https://github.com/sweetrb/apple-mail-mcp/pull/164), head `c05a933a2b358761789a17d873a03ef818b1d94e`; local 41/575);
+- mail transport encryption is required ([#165](https://github.com/sweetrb/apple-mail-mcp/pull/165), head `16b7bc575a98c864efe7b1bd3287476f6fcc673d`; local 40/574); and
+- outbound attachment reads are constrained ([#168](https://github.com/sweetrb/apple-mail-mcp/pull/168), head `0410e9fc74b0ee15324fd6b59b25689f75e37955`; local 41/570).
+
+Apple Mail MCP governance and development assurance:
+
+- repository threat model ([#158](https://github.com/sweetrb/apple-mail-mcp/pull/158), head `1256fcabb4df4755bc81ec309908e40ba8caa9ef`; local 40/573);
+- Codex MCP runtime pin ([#166](https://github.com/sweetrb/apple-mail-mcp/pull/166), head `52e78cbedb05da7a0a1d1e4c126859cb86173005`; local 40/573);
+- npm dev-dependency auto-merge governance ([#167](https://github.com/sweetrb/apple-mail-mcp/pull/167), head `8e721861658a114e4f01fff0fc757f96c9091bfb`; local 40/573); and
+- shared validation schemas and security-test contract ([#169](https://github.com/sweetrb/apple-mail-mcp/pull/169), head `8afcf67f95101140436e5cc1ea3f88d8f81cd1d2`; local 40/575).
+
+The remaining five external pull requests are:
 
 - preventing a native macOS Transmission quit hang by moving blocking UPnP
   gateway validation off the session thread; the August 2 revision is rebased,
@@ -135,7 +157,7 @@ their live upstream state:
 ## Current Product Reports
 
 I also keep evidence-bounded product reports current instead of treating issue
-filing as the finish line. As of August 4, four Codex reports remain open after
+filing as the finish line. As of August 14, three Codex reports remain open after
 focused July 22 routing requests to maintainers with demonstrated subsystem
 ownership:
 
@@ -148,9 +170,10 @@ ownership:
 - the official LinkedIn connector returning an upstream `403 IP not authorized`
   and then masking it with a template-loading failure
   ([openai/codex#33951](https://github.com/openai/codex/issues/33951));
-- mobile Remote Control retaining stale or offline state while host-side work
-  and events continue
-  ([openai/codex#22773](https://github.com/openai/codex/issues/22773)).
+
+The former mobile Remote Control report
+([openai/codex#22773](https://github.com/openai/codex/issues/22773)) was closed
+as not planned on August 6, 2026 and is no longer counted as open.
 
 None has received a maintainer response. The profile records that verified
 state and does not present routing requests as acknowledgements or fixes.
