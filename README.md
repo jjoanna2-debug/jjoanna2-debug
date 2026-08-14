@@ -45,7 +45,7 @@ going on.
 
 ## Recent Focus
 
-Eighteen external pull requests have now merged across seven open-source
+Twenty-three external pull requests have now merged across seven open-source
 projects:
 
 - landing a merged documentation and accessibility-guidance pass for
@@ -103,15 +103,17 @@ projects:
   [Apple Numbers v1.1.12](https://github.com/sweetrb/apple-numbers-mcp/releases/tag/v1.1.12)
   and
   [Apple Photos v2.1.6](https://github.com/sweetrb/apple-photos-mcp/releases/tag/v2.1.6);
-- merging four August 14 Apple Mail MCP hardening contributions: atomic numeric
-  batch scope
-  ([#159](https://github.com/sweetrb/apple-mail-mcp/pull/159)), bounded IMAP
-  attachment fetches
-  ([#162](https://github.com/sweetrb/apple-mail-mcp/pull/162)), the Codex MCP
-  runtime pin
-  ([#166](https://github.com/sweetrb/apple-mail-mcp/pull/166)), and shared
-  validation schemas
-  ([#169](https://github.com/sweetrb/apple-mail-mcp/pull/169));
+- merging nine August 14 Apple Mail MCP hardening and assurance contributions:
+  the repository threat model ([#158](https://github.com/sweetrb/apple-mail-mcp/pull/158)),
+  atomic numeric batch scope ([#159](https://github.com/sweetrb/apple-mail-mcp/pull/159)),
+  ambiguous-message rejection ([#160](https://github.com/sweetrb/apple-mail-mcp/pull/160)),
+  fail-closed attachment overwrites ([#161](https://github.com/sweetrb/apple-mail-mcp/pull/161)),
+  bounded IMAP attachment fetches ([#162](https://github.com/sweetrb/apple-mail-mcp/pull/162)),
+  disabled-by-default new mail rules ([#164](https://github.com/sweetrb/apple-mail-mcp/pull/164)),
+  the Codex MCP runtime pin ([#166](https://github.com/sweetrb/apple-mail-mcp/pull/166)),
+  constrained outbound attachment reads ([#168](https://github.com/sweetrb/apple-mail-mcp/pull/168)),
+  and shared validation schemas ([#169](https://github.com/sweetrb/apple-mail-mcp/pull/169));
+  the merged work is now in upstream `main` and release v2.10.31;
 - making the profile itself a useful entry point instead of a billboard;
 - keeping the main lab Rust-first instead of accidentally letting helper code
   define the repo;
@@ -124,30 +126,17 @@ projects:
 
 ## Current Open Work
 
-As of August 14, 2026, eleven external pull requests are open and tracked
-against their live upstream state. Six Apple Mail MCP entries are open, Ready
-for review, mergeable, and required-check green; they are not accepted or
-maintainer-approved. The other six entries from the August batch are four
-merged contributions (#159, #162, #166, and #169) and two closed contributions
-(#163 and #167), so they are not counted as open work.
-
-Apple Mail MCP runtime hardening:
-
-- ambiguous message IDs are refused ([#160](https://github.com/sweetrb/apple-mail-mcp/pull/160), head `8aeb7c745a978ea8242dc62f82e2b580fae37ba3`; local 41 files/580 tests; fresh CI and CodeQL pass);
-- attachment overwrites are prevented ([#161](https://github.com/sweetrb/apple-mail-mcp/pull/161), head `b219cf0e778f978c6d87987041040495553a5ea7`; local 40 files/580 tests; fresh CI and CodeQL pass);
-- new mail rules default to disabled ([#164](https://github.com/sweetrb/apple-mail-mcp/pull/164), head `387d6034af5513230fdb4e9269aee2b739d1051a`; local 41 files/579 tests; fresh CI and CodeQL pass);
-- mail transport encryption is required ([#165](https://github.com/sweetrb/apple-mail-mcp/pull/165), head `63411740a350eb33d36a11f28b3a5f6b41136401`; local 40 files/581 tests; fresh CI, CodeQL, and IMAP pass); and
-- outbound attachment reads are constrained ([#168](https://github.com/sweetrb/apple-mail-mcp/pull/168), head `67ad2113499335ef91fb9678abff497684c27b56`; local 41 files/586 tests; fresh CI and CodeQL pass).
-
-Apple Mail MCP governance and development assurance:
-
-- repository threat model ([#158](https://github.com/sweetrb/apple-mail-mcp/pull/158), head `4accc722bb75ed2bf12d3035f572af96eca38cf2`; local 40 files/577 tests; fresh CI and CodeQL pass).
-
-The other batch dispositions are explicit: #159, #162, #166, and #169 merged
-upstream on August 14; #163 closed after the maintainer declined removing the
-documented empty-Trash expunge capability; and #167 closed in favor of
-maintainer PR #170. They are not presented as open, pending, or maintainer-
-approved work.
+As of August 14, 2026, five authored external pull requests are open and
+tracked against their live upstream state. No authored Apple Mail MCP PRs remain
+open. The August batch is resolved as follows: `#158`, `#159`, `#160`, `#161`,
+`#162`, `#164`, `#166`, `#168`, and `#169` merged upstream; `#163`, `#165`, and
+`#167` closed without merge. `#163` retained the deliberate documented
+empty-Trash expunge behavior; `#165` was superseded by maintainer `#171`; and
+`#167` was superseded by maintainer `#170`. They are not presented as open,
+pending, or maintainer-approved work.
+Upstream is at `3dee1ed89c27b968795fbbb9740d365ea06e255a` and release v2.10.31
+points to that revision. The current separate external upstream PR #174 is
+blocked by `action_required` with no check runs and is not authored work.
 
 The remaining five external pull requests are:
 
