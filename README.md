@@ -1,195 +1,100 @@
 # Jean-Claude Joanna
 
-I build in public and care about work that is readable, testable, and easy to
-trust.
+I work on software security, reliability, and open-source maintenance across
+Rust, Swift and macOS, TypeScript and Node.js, Python, and GitHub Actions.
 
-This account is my GitHub lab: small repos, clean docs, checked-in proof, and
-practical assisted-coding workflows that stay grounded in real tests instead of
-big promises.
+My strongest work sits at the point where a vague failure becomes a precise,
+reviewable change: isolate the defect, identify the trust boundary, make the
+smallest complete fix, and prove it with tests, builds, static analysis, or a
+reproducible field check. I care about patches that survive contact with real
+maintainers, not code that merely looks plausible in a diff.
 
-Right now the main public signal is simple: keep the lab Rust-first, keep the
-checks honest, and remove stale work instead of letting it blur the picture.
+## Selected Open-Source Work
 
-## What To Look At
+### Security and trust boundaries
 
-- [test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) - a
-  small Rust practice repo with CI, a Rust-native repository doctor, pinned
-  workflow actions, secret/evidence guardrails, issue templates, and public repo
-  hygiene.
-- Open-source pull requests - scoped patches, green checks, and proof-first
-  descriptions.
-- This profile - the home base for current experiments, cleanup work, and public
-  learning.
+- **Apple Mail MCP:** merged hardening across account-scoped mail operations,
+  sender authorization, attachment size limits, exclusive file creation,
+  ambiguous message identifiers, disabled-by-default mail rules, constrained
+  outbound attachment reads, shared validation schemas, and a repository threat
+  model. The work shipped across multiple upstream releases through v2.10.31.
+- **Markdown Preview:** fixed Quick Look asset-containment gaps, added native
+  trackpad pinch zoom, and repaired large-document selection behavior across
+  virtualized editor content and read mode. The accepted work shipped in
+  releases 0.0.29 and 0.0.34.
+- **Dependency security:** completed the `brace-expansion` remediation across
+  both legacy CommonJS and current dependency paths without hiding the advisory
+  or forcing an incompatible major version through the lint toolchain.
 
-## What I Care About
+### Reliability and product behavior
 
-- clear first pages that make a repo easy to trust;
-- boring public hygiene in the repos that need it: licenses, security notes,
-  support paths, issue templates, and CI;
-- guardrails that fail closed before secrets, private files, or sloppy workflows
-  become public history;
-- small patches with proof, not giant mystery drops;
-- writing that feels human and useful;
-- learning fast without making the workspace messy.
+- **GoalBuddy:** aligned runtime receipt contracts, exposed residual Codex state,
+  added deterministic reset cleanup, and fixed local-board rendering for
+  multiple active tasks.
+- **liteparse:** fixed batch-output path handling for nested input directories in
+  both the Rust CLI and Python binding.
+- **Snapzy:** removed Quick Access dismissal lag by separating immediate UI
+  removal from deferred cleanup.
+- **Impeccable:** fixed a stale callback race that could let an older toast
+  animate or remove a newer one.
 
-## Current Lab
+### Current upstream work
 
-[test-project-tbd](https://github.com/jjoanna2-debug/test-project-tbd) is my
-public practice repo.
+Active contributions include a Transmission shutdown fix that moves blocking
+UPnP gateway validation off the session thread, three focused IINA fixes, and a
+Daytona guide for building and reviewing transcription-provider adapters with
+bounded polling and explicit credential controls.
 
-It is deliberately small: a Rust starter, GitHub Actions checks, issue
-templates, repo policy files, a Rust-native repository doctor, and documentation
-for how the project is organized. The point is not to look huge. The point is to
-make the basics clean enough that someone can open it and understand what is
-going on.
+## Featured Repository
 
-## Recent Focus
+[`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is a
+small Rust 2024 repository built as a public quality and security harness. It has
+no runtime dependencies and uses an exact toolchain, protected checks, and a
+Rust-native repository doctor.
 
-Twenty-three external pull requests have now merged across seven open-source
-projects:
+The doctor provides:
 
-- landing a merged documentation and accessibility-guidance pass for
-  make-interfaces-feel-better
-  ([jakubkrehel/make-interfaces-feel-better#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1)),
-  covering Codex installation, font-family scope, context-specific hit areas,
-  and a machine-detectable MIT license;
-- landing approved and merged GoalBuddy Codex-runtime patches:
-  [#28](https://github.com/tolibear/goalbuddy/pull/28),
-  [#29](https://github.com/tolibear/goalbuddy/pull/29), and
-  [#30](https://github.com/tolibear/goalbuddy/pull/30);
-- landing a merged GoalBuddy local-board rendering fix for multiple active tasks
-  ([tolibear/goalbuddy#34](https://github.com/tolibear/goalbuddy/pull/34));
-- landing a merged liteparse batch-output directory fix
-  ([run-llama/liteparse#313](https://github.com/run-llama/liteparse/pull/313));
-- landing a merged Snapzy macOS patch for Quick Access dismiss lag
-  ([duongductrong/Snapzy#256](https://github.com/duongductrong/Snapzy/pull/256)),
-  included before the `v1.23.0` release line;
-- landing three approved and merged Markdown Preview improvements: Quick Look
-  asset containment
-  ([pluk-inc/markdown-preview#152](https://github.com/pluk-inc/markdown-preview/pull/152))
-  and native trackpad pinch zoom
-  ([pluk-inc/markdown-preview#156](https://github.com/pluk-inc/markdown-preview/pull/156)),
-  both included in
-  [release 0.0.29](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.29),
-  plus reliable full-document selection in long edit-mode files and standard
-  Shift-selection in read mode
-  ([pluk-inc/markdown-preview#185](https://github.com/pluk-inc/markdown-preview/pull/185)),
-  credited in
-  [release 0.0.34](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.34);
-- landing a merged Impeccable live-mode toast race fix
-  ([pbakaus/impeccable#271](https://github.com/pbakaus/impeccable/pull/271));
-- shipping the Apple Mail MCP v2.8.10 hardening pass
-  ([sweetrb/apple-mail-mcp#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)),
-  covering account-bound IMAP operations, SMTP sender allowlisting, bounded
-  inline attachments, and canonicalized attachment-save containment; the owner
-  verified 392 unit tests, 47 integration tests, and a reproducible bundle
-  before publishing
-  [release v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10);
-- completing Apple Mail MCP's dev-only `brace-expansion` remediation in two
-  evidence-backed steps: API-compatible v1 hardening
-  ([sweetrb/apple-mail-mcp#119](https://github.com/sweetrb/apple-mail-mcp/pull/119))
-  without suppressing the advisory or forcing an incompatible major version
-  through ESLint's dependency path, followed by the complete v1/v5 sequence
-  bounds after the repository's supply-chain age gate
-  ([sweetrb/apple-mail-mcp#123](https://github.com/sweetrb/apple-mail-mcp/pull/123));
-  the owner credited the 10,000-zero reproduction as decisive proof, added an
-  independent v5 floor, and explicitly credited the original finding while
-  porting it to
-  [Apple Notes #113](https://github.com/sweetrb/apple-notes-mcp/pull/113),
-  [Apple Numbers #49](https://github.com/sweetrb/apple-numbers-mcp/pull/49), and
-  [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60). The
-  credit now appears in all four repositories' changelogs, and the downstream
-  fix has shipped in
-  [Apple Numbers v1.1.12](https://github.com/sweetrb/apple-numbers-mcp/releases/tag/v1.1.12)
-  and
-  [Apple Photos v2.1.6](https://github.com/sweetrb/apple-photos-mcp/releases/tag/v2.1.6);
-- merging nine August 14 Apple Mail MCP hardening and assurance contributions:
-  the repository threat model ([#158](https://github.com/sweetrb/apple-mail-mcp/pull/158)),
-  atomic numeric batch scope ([#159](https://github.com/sweetrb/apple-mail-mcp/pull/159)),
-  ambiguous-message rejection ([#160](https://github.com/sweetrb/apple-mail-mcp/pull/160)),
-  fail-closed attachment overwrites ([#161](https://github.com/sweetrb/apple-mail-mcp/pull/161)),
-  bounded IMAP attachment fetches ([#162](https://github.com/sweetrb/apple-mail-mcp/pull/162)),
-  disabled-by-default new mail rules ([#164](https://github.com/sweetrb/apple-mail-mcp/pull/164)),
-  the Codex MCP runtime pin ([#166](https://github.com/sweetrb/apple-mail-mcp/pull/166)),
-  constrained outbound attachment reads ([#168](https://github.com/sweetrb/apple-mail-mcp/pull/168)),
-  and shared validation schemas ([#169](https://github.com/sweetrb/apple-mail-mcp/pull/169));
-  the merged work is now in upstream `main` and release v2.10.31;
-- making the profile itself a useful entry point instead of a billboard;
-- keeping the main lab Rust-first instead of accidentally letting helper code
-  define the repo;
-- tightening repository structure checks, secret/evidence guardrails, and cleanup
-  habits;
-- keeping CI simple, pinned, and honest;
-- documenting local setup and GitHub workflow habits;
-- using assisted coding tools while keeping authorship, review, and
-  verification explicit.
+- bounded repository traversal and bounded text reads;
+- content-aware handling for text, binary files, and misleading extensions;
+- provider-specific credential signatures and calibrated generic secret
+  detection;
+- maintained precision, recall, F1, and average-precision regression floors;
+- GitHub Actions permission, trigger, checkout, and immutable-reference policy;
+- deterministic text, JSON, and native GitHub annotation output;
+- checks that defend the repository's own CI and Dependabot guarantees from
+  silent regression.
 
-## Current Open Work
+The repository is deliberately compact. The value is in the enforced contract:
+security controls, documentation, and automation must describe the same system.
 
-As of August 14, 2026, five authored external pull requests are open and
-tracked against their live upstream state. No authored Apple Mail MCP PRs remain
-open. The August batch is resolved as follows: `#158`, `#159`, `#160`, `#161`,
-`#162`, `#164`, `#166`, `#168`, and `#169` merged upstream; `#163`, `#165`, and
-`#167` closed without merge. `#163` retained the deliberate documented
-empty-Trash expunge behavior; `#165` was superseded by maintainer `#171`; and
-`#167` was superseded by maintainer `#170`. They are not presented as open,
-pending, or maintainer-approved work.
-Upstream is at `3dee1ed89c27b968795fbbb9740d365ea06e255a` and release v2.10.31
-points to that revision. The current separate external upstream PR #174 is
-blocked by `action_required` with no check runs and is not authored work.
+## What I Work On
 
-The remaining five external pull requests are:
+- software security reviews and threat modeling;
+- Rust tooling and command-line utilities;
+- Swift and native macOS application defects;
+- TypeScript and Node.js service hardening;
+- filesystem containment, attachment safety, and account scoping;
+- concurrency, lifecycle, and race-condition fixes;
+- GitHub Actions, CI/CD policy, dependency governance, and release hygiene;
+- technical documentation that is checked against the implementation.
 
-- preventing a native macOS Transmission quit hang by moving blocking UPnP
-  gateway validation off the session thread; the August 2 revision is rebased,
-  narrowed to the single UPnP source file, and validated by 583 tests plus a
-  universal arm64/x86_64 macOS build
-  ([transmission/transmission#8984](https://github.com/transmission/transmission/pull/8984));
-- correcting IINA's Open URL failure message, playlist-relative paths, and
-  plugin default-branch update checks
-  ([#6189](https://github.com/iina/iina/pull/6189),
-  [#6190](https://github.com/iina/iina/pull/6190), and
-  [#6191](https://github.com/iina/iina/pull/6191));
-- extending Daytona's Sapat provider guide with current registry architecture,
-  validation, and security boundaries
-  ([daytonaio/content#181](https://github.com/daytonaio/content/pull/181)).
+## Working Standard
 
-## Current Product Reports
+I keep changes narrow enough to audit, but complete enough to merge. Security
+boundaries fail closed. Public claims are tied to evidence. Generated artifacts
+are rebuilt and compared. Documentation is updated in the same change when the
+contract moves. A green check is useful only when it validates the revision
+actually under review.
 
-I also keep evidence-bounded product reports current instead of treating issue
-filing as the finish line. As of August 14, three Codex reports remain open after
-focused July 22 routing requests to maintainers with demonstrated subsystem
-ownership:
+## Sponsorship and Engineering Work
 
-- ChatGPT Desktop resetting the bundled Computer Use MCP server to disabled
-  while the plugin remains enabled
-  ([openai/codex#34807](https://github.com/openai/codex/issues/34807));
-- a completed Codex Security scan becoming impossible to close after its
-  app-managed temporary artifacts disappear
-  ([openai/codex#33994](https://github.com/openai/codex/issues/33994));
-- the official LinkedIn connector returning an upstream `403 IP not authorized`
-  and then masking it with a template-loading failure
-  ([openai/codex#33951](https://github.com/openai/codex/issues/33951));
+I am open to sponsorship, focused security reviews, repository hardening,
+maintainer support, difficult bug fixes, CI modernization, and technical writing
+for developer tools. Sponsorship funds more upstream work with public patches,
+reproducible verification, and durable documentation rather than private
+one-off output.
 
-The former mobile Remote Control report
-([openai/codex#22773](https://github.com/openai/codex/issues/22773)) was closed
-as not planned on August 6, 2026 and is no longer counted as open.
+Professional contact:
+[LinkedIn](https://pt.linkedin.com/in/jeanclaudejoanna)
 
-None has received a maintainer response. The profile records that verified
-state and does not present routing requests as acknowledgements or fixes.
-
-## How I Work
-
-- I keep changes small enough to review.
-- I run the checks that prove the claim.
-- I would rather delete stale work than let it rot.
-- I like clear docs, plain language, and boring reliability.
-
-## Connect
-
-I like practical builders, careful reviewers, and people who enjoy turning messy
-first drafts into something shippable.
-
-The best starting point is this GitHub profile:
-[github.com/jjoanna2-debug](https://github.com/jjoanna2-debug). If the work
-here feels aligned, say hi through the contact path where you found me.
+_Last reviewed: 2026-08-17._
