@@ -22,7 +22,8 @@ projects.
 
 - **Apple Mail MCP:** [#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)
   hardened account-scoped mail operations, sender authorization, attachment
-  limits, and file creation; it shipped in [v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10).
+  limits, and file creation; the owner verified 392 unit tests, 47 integration
+  tests, and a reproducible bundle before it shipped in [v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10).
 - **Dependency security:** [#119](https://github.com/sweetrb/apple-mail-mcp/pull/119)
   and [#123](https://github.com/sweetrb/apple-mail-mcp/pull/123) completed the
   `brace-expansion` remediation across the legacy CommonJS and current paths.
@@ -73,7 +74,7 @@ projects.
 
 ## Current Upstream Work
 
-As of August 17, 2026, these authored external pull requests remain open. None
+As of August 17, 2026, five authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -84,12 +85,18 @@ is presented as merged, shipped, or maintainer-approved.
 - **IINA [#6189](https://github.com/iina/iina/pull/6189), [#6190](https://github.com/iina/iina/pull/6190),
   and [#6191](https://github.com/iina/iina/pull/6191):** three focused fixes for
   Open URL behavior, relative playlist paths, and plugin default-branch updates.
-  All three are open and mergeable; no completed checks were returned in the
-  current live readback.
+  The PRs are open and mergeable against `develop`; the current live readback
+  returned no completed checks or maintainer approval.
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
   mergeable with a passing DCO check.
+
+The personal-fork validation PRs [#4](https://github.com/jjoanna2-debug/iina/pull/4),
+[#5](https://github.com/jjoanna2-debug/iina/pull/5), and [#6](https://github.com/jjoanna2-debug/iina/pull/6)
+merged into the fork's `develop` branch. The upstream reviews were reopened
+from their preserved source heads; they remain under review, not presented as
+accepted upstream contributions or releases.
 
 ## Featured Repository
 
@@ -146,9 +153,6 @@ are rebuilt and compared. Documentation is updated in the same change when the
 contract moves. A green check is useful only when it validates the revision
 actually under review.
 
-I use assisted coding tools, but authorship, review, and verification remain
-explicit.
-
 ## Sponsorship and Engineering Work
 
 I am open to sponsorship, focused security reviews, repository hardening,
@@ -158,6 +162,6 @@ reproducible verification, and durable handoff documentation. Sponsorship funds
 more upstream work with public patches rather than private one-off output.
 
 Professional contact:
-[LinkedIn](https://pt.linkedin.com/in/jeanclaudejoanna)
+[LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
 _Last reviewed: 2026-08-17._
