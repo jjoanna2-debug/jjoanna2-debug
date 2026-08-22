@@ -15,7 +15,7 @@ record that maintainers can audit.
 
 ## Selected Open-Source Work
 
-I have 23 authored external pull requests merged across seven open-source
+I have 24 authored external pull requests merged across eight open-source
 projects.
 
 ### Security and trust boundaries
@@ -71,10 +71,14 @@ projects.
 - **Make Interfaces Feel Better:** [#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1)
   delivered the merged licensing and polish contribution that the earlier
   profile rewrite omitted.
+- **IINA:** [#6189](https://github.com/iina/iina/pull/6189) separates malformed
+  URL input from a valid network URL that fails later while opening. The focused
+  Swift fix merged into `develop` and closed [#6134](https://github.com/iina/iina/issues/6134)
+  without expanding into the separate `file://` acceptance path.
 
 ## Current Upstream Work
 
-As of August 17, 2026, five authored external pull requests remain open. None
+As of August 22, 2026, four authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -82,11 +86,11 @@ is presented as merged, shipped, or maintainer-approved.
   during shutdown. GitHub currently reports the PR as mergeable, but it is not
   merged or shipped, no approving maintainer review is recorded, and its
   current workflows await maintainer approval.
-- **IINA [#6189](https://github.com/iina/iina/pull/6189), [#6190](https://github.com/iina/iina/pull/6190),
-  and [#6191](https://github.com/iina/iina/pull/6191):** three focused fixes for
-  Open URL behavior, relative playlist paths, and plugin default-branch updates.
-  The PRs are open and mergeable against `develop`; the current live readback
-  returned no completed checks or maintainer approval.
+- **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
+  focused fixes for portable playlist paths and plugin default-branch updates.
+  Both are open and mergeable against `develop`. Maintainers are discussing the
+  path-compatibility boundary for #6190, while #6191 awaits plugin-maintainer
+  review; neither is presented as accepted upstream work.
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
@@ -94,9 +98,9 @@ is presented as merged, shipped, or maintainer-approved.
 
 The personal-fork validation PRs [#4](https://github.com/jjoanna2-debug/iina/pull/4),
 [#5](https://github.com/jjoanna2-debug/iina/pull/5), and [#6](https://github.com/jjoanna2-debug/iina/pull/6)
-merged into the fork's `develop` branch. The upstream reviews were reopened
-from their preserved source heads; they remain under review, not presented as
-accepted upstream contributions or releases.
+merged into the fork's `develop` branch. #4 validated the change that later
+merged upstream as IINA #6189; #5 and #6 remain supporting fork history for the
+two open upstream reviews, not upstream acceptance or release evidence.
 
 ## Featured Repository
 
@@ -164,4 +168,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-08-17._
+_Last reviewed: 2026-08-22._
