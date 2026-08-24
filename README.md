@@ -86,7 +86,7 @@ is presented as merged, shipped, or maintainer-approved.
   during shutdown. GitHub currently reports the PR as mergeable, but it is not
   merged or shipped, no approving maintainer review is recorded, and its
   current workflows await maintainer approval.
-- **Retransmission [#255](https://github.com/retransmission/retransmission/pull/255):**
+- **Retransmission [#256](https://github.com/retransmission/retransmission/pull/256):**
   ports the same focused UPnP shutdown fix to Retransmission's current core
   after a Transmission maintainer suggested the parallel review path. The PR
   changes one file, is open and mergeable, and is not presented as a replacement
