@@ -78,7 +78,7 @@ projects.
 
 ## Current Upstream Work
 
-As of August 22, 2026, four authored external pull requests remain open. None
+As of August 24, 2026, five authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -86,6 +86,11 @@ is presented as merged, shipped, or maintainer-approved.
   during shutdown. GitHub currently reports the PR as mergeable, but it is not
   merged or shipped, no approving maintainer review is recorded, and its
   current workflows await maintainer approval.
+- **Retransmission [#255](https://github.com/retransmission/retransmission/pull/255):**
+  ports the same focused UPnP shutdown fix to Retransmission's current core
+  after a Transmission maintainer suggested the parallel review path. The PR
+  changes one file, is open and mergeable, and is not presented as a replacement
+  for or acceptance of Transmission #8984.
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both are open and mergeable against `develop`. Maintainers are discussing the
@@ -168,4 +173,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-08-22._
+_Last reviewed: 2026-08-24._
