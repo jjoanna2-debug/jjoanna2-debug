@@ -78,7 +78,7 @@ projects.
 
 ## Current Upstream Work
 
-As of August 24, 2026, five authored external pull requests remain open. None
+As of August 26, 2026, six authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -89,8 +89,9 @@ is presented as merged, shipped, or maintainer-approved.
 - **Retransmission [#256](https://github.com/retransmission/retransmission/pull/256):**
   ports the same focused UPnP shutdown fix to Retransmission's current core
   after a Transmission maintainer suggested the parallel review path. The PR
-  changes one file, is open and mergeable, and is not presented as a replacement
-  for or acceptance of Transmission #8984.
+  changes one file, is open and mergeable, and its current CodeQL and Sanity
+  checks pass after the requested review and clang-tidy fixes. It is not
+  presented as a replacement for or acceptance of Transmission #8984.
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both are open and mergeable against `develop`. Maintainers are discussing the
@@ -100,6 +101,12 @@ is presented as merged, shipped, or maintainer-approved.
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
   mergeable with a passing DCO check.
+- **TokenTelemetry [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299):**
+  hardens the local launcher to bind its dashboard and API to the configured
+  loopback host, updates vulnerable frontend tooling, and clears the ESLint
+  baseline. Local lint, TypeScript, production build, dependency audit, and
+  listener verification pass; upstream workflows await first-time-contributor
+  approval and maintainer review.
 
 The personal-fork validation PRs [#4](https://github.com/jjoanna2-debug/iina/pull/4),
 [#5](https://github.com/jjoanna2-debug/iina/pull/5), and [#6](https://github.com/jjoanna2-debug/iina/pull/6)
@@ -173,4 +180,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-08-24._
+_Last reviewed: 2026-08-26._
