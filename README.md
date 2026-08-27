@@ -87,7 +87,8 @@ projects.
   dependencies, and clears the lint baseline. The owner independently
   reproduced the LAN exposure and verified both launch modes before merging;
   [#300](https://github.com/VasiHemanth/tokentelemetry/pull/300) landed first so
-  lockfile-only dependency updates also reach existing installs.
+  lockfile-only dependency updates also reach existing installs. The merged
+  history credits `jjoanna2-debug` on all three contributed commits.
 
 ## Current Upstream Work
 
@@ -95,10 +96,12 @@ As of August 27, 2026, four authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
-  moves blocking `UPNP_GetValidIGD()` gateway validation off the session thread
-  during shutdown. GitHub currently reports the PR as mergeable, but it is not
-  merged or shipped, no approving maintainer review is recorded, and its
-  current workflows await maintainer approval.
+  remains open as the original Transmission integration path after the same
+  focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
+  GitHub reports #8984 as mergeable but unstable, with no approving maintainer
+  review or current check runs. The merged and verified delivery is the
+  Retransmission port; this entry remains only because the original upstream PR
+  is still open.
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both are open and mergeable against `develop`. Maintainers are discussing the
