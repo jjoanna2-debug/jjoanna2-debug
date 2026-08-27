@@ -80,7 +80,8 @@ projects.
   shutdown, preserves miniupnpc ownership and diagnostic status, and handles
   an empty discovery result explicitly. Both core maintainers approved the
   final revision, and the full CodeQL and cross-platform Sanity matrix passed
-  before merge.
+  before merge. The verified squash commit credits me as its author and links
+  `jjoanna2-debug` again in its co-author trailer.
 - **TokenTelemetry:** [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299)
   makes the default dashboard genuinely loopback-only, keeps explicit remote
   mode working, corrects the Node 20.9 minimum, updates vulnerable frontend
