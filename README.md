@@ -93,9 +93,16 @@ projects.
 
 ## Current Upstream Work
 
-As of August 27, 2026, four authored external pull requests remain open. None
+As of September 2, 2026, five authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
+- **LinkedIn MCP [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854):**
+  prevents fresh installations from resolving FastMCP 4 while six current tool
+  registrations still rely on the removed `exclude_args` argument. The patch
+  keeps project and wheel metadata aligned and adds a regression test that
+  forces the temporary upper bound to be revisited after migration. GitHub
+  reports the PR as mergeable and clean; all 18 current checks pass at the
+  exact reviewed head, with no maintainer review recorded yet.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
@@ -185,4 +192,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-08-27._
+_Last reviewed: 2026-09-02._
