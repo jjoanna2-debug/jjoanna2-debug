@@ -101,7 +101,7 @@ is presented as merged, shipped, or maintainer-approved.
   registrations still rely on the removed `exclude_args` argument. The patch
   keeps project and wheel metadata aligned and adds a regression test that
   forces the temporary upper bound to be revisited after migration. GitHub
-  reports the PR as mergeable and clean; all 18 current checks pass at the
+  reports the PR as mergeable and clean; every current check passes at the
   exact reviewed head, with no maintainer review recorded yet.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
