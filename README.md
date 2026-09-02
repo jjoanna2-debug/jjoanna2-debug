@@ -101,9 +101,17 @@ projects.
 
 ## Current Upstream Work
 
-As of September 2, 2026, four authored external pull requests remain open. None
+As of September 2, 2026, six authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
+- **LinkedIn MCP [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
+  and [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865):**
+  #863 packages an opt-in, version-pinned Codex plugin with independent MCP
+  enablement and release synchronization; initialization and tool discovery
+  expose all 19 tools without starting Chrome or moving focus. The separate
+  test-only #865 isolates host terminal and Python startup-hook behavior; its
+  full local suite passes 2,970 tests with 148 declared skips and zero failures.
+  Both PRs are open, mergeable, and fully green, with maintainer review pending.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
