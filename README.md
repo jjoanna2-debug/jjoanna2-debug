@@ -15,7 +15,7 @@ record that maintainers can audit.
 
 ## Selected Open-Source Work
 
-I have 26 authored external pull requests merged across ten open-source
+I have 27 authored external pull requests merged across eleven open-source
 projects.
 
 ### Security and trust boundaries
@@ -90,19 +90,19 @@ projects.
   [#300](https://github.com/VasiHemanth/tokentelemetry/pull/300) landed first so
   lockfile-only dependency updates also reach existing installs. The merged
   history credits `jjoanna2-debug` on all three contributed commits.
+- **LinkedIn MCP:** [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
+  restores fresh-install initialization by keeping FastMCP below v4 while the
+  current tool registrations still use the removed `exclude_args` argument.
+  The merged change aligns project, lock, and wheel metadata and adds a
+  migration-trigger regression test. GitHub credits `jjoanna2-debug` on the
+  verified merge commit. The source fix is upstream; PyPI 4.23.2 has not yet
+  released it.
 
 ## Current Upstream Work
 
-As of September 2, 2026, five authored external pull requests remain open. None
+As of September 2, 2026, four authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
-- **LinkedIn MCP [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854):**
-  prevents fresh installations from resolving FastMCP 4 while six current tool
-  registrations still rely on the removed `exclude_args` argument. The patch
-  keeps project and wheel metadata aligned and adds a regression test that
-  forces the temporary upper bound to be revisited after migration. GitHub
-  reports the PR as mergeable and clean; every current check passes at the
-  exact reviewed head, with no maintainer review recorded yet.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
