@@ -95,8 +95,9 @@ projects.
   current tool registrations still use the removed `exclude_args` argument.
   The merged change aligns project, lock, and wheel metadata and adds a
   migration-trigger regression test. GitHub credits `jjoanna2-debug` on the
-  verified merge commit. The source fix is upstream; PyPI 4.23.2 has not yet
-  released it.
+  verified merge commit. The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
+  whose notes feature #854 under Bug Fixes and name `@jjoanna2-debug` as a new
+  contributor. PyPI 4.23.3 carries the corrected `fastmcp<4,>=3.4.4` range.
 
 ## Current Upstream Work
 
