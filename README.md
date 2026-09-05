@@ -119,8 +119,9 @@ is presented as merged, shipped, or maintainer-approved.
   enablement and release synchronization; initialization and tool discovery
   expose all 19 tools without starting Chrome or moving focus. The separate
   test-only #865 isolates host terminal and Python startup-hook behavior; its
-  full local suite passes 2,970 tests with 148 declared skips and zero failures.
-  Both PRs are open, mergeable, and fully green, with maintainer review pending.
+  full local suite passes 2,982 tests with 148 declared skips and zero failures.
+  Both PRs include current upstream changes and remain open, mergeable, and
+  fully green, with maintainer review pending.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
