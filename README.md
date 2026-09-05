@@ -15,11 +15,20 @@ record that maintainers can audit.
 
 ## Selected Open-Source Work
 
-I have 27 authored external pull requests merged across eleven open-source
+I have 28 authored external pull requests merged across eleven open-source
 projects.
 
 ### Security and trust boundaries
 
+- **Apple Mail SMTP delivery:** [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214)
+  shipped in [v2.17.8](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.17.8).
+  It repairs IMAP reply/forward routing, preserves reply-thread headers, rejects
+  unrelated sending identities, and prevents silent transport fallback or lost
+  forward content. The [maintainer credited the diagnosis and regression coverage](https://github.com/sweetrb/apple-mail-mcp/pull/214#issuecomment-5551476302),
+  specifically recognizing the latent cross-account-send gap. GitHub records me
+  as the [merge commit author](https://github.com/sweetrb/apple-mail-mcp/commit/0a75ee7c455d0f4d09bc2ad23386b4d6e61c1d1f);
+  the release notes document the contributed fixes. The released tree exactly
+  matches the tested PR head.
 - **Apple Mail MCP:** [#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)
   hardened account-scoped mail operations, sender authorization, attachment
   limits, and file creation; the owner verified 392 unit tests, 47 integration
@@ -101,18 +110,9 @@ projects.
 
 ## Current Upstream Work
 
-As of September 5, 2026, seven authored external pull requests remain open. None
+As of September 5, 2026, six authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
-- **Apple Mail MCP [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214):**
-  repairs SMTP reply and forward routing for composite IMAP message IDs,
-  preserves reply-thread headers, bounds source reads, and checks sending
-  identity. Selected SMTP failures cannot silently switch transports, and
-  forwards cannot silently discard an unreadable original body. The PR is
-  open, ready for review, and passes all applicable checks; 748 unit tests and
-  eight built-server schema tests pass. It bypasses Mail.app's compose wrapping
-  through SMTP; it does not change Apple's implementation or claim live
-  provider-delivery verification.
 - **LinkedIn MCP [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
   and [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865):**
   #863 packages an opt-in, version-pinned Codex plugin with independent MCP
