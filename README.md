@@ -101,9 +101,18 @@ projects.
 
 ## Current Upstream Work
 
-As of September 2, 2026, six authored external pull requests remain open. None
+As of September 5, 2026, seven authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
+- **Apple Mail MCP [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214):**
+  repairs SMTP reply and forward routing for composite IMAP message IDs,
+  preserves reply-thread headers, bounds source reads, and checks sending
+  identity. Selected SMTP failures cannot silently switch transports, and
+  forwards cannot silently discard an unreadable original body. The PR is
+  open, ready for review, and passes all applicable checks; 748 unit tests and
+  eight built-server schema tests pass. It bypasses Mail.app's compose wrapping
+  through SMTP; it does not change Apple's implementation or claim live
+  provider-delivery verification.
 - **LinkedIn MCP [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
   and [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865):**
   #863 packages an opt-in, version-pinned Codex plugin with independent MCP
@@ -201,4 +210,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-09-02._
+_Last reviewed: 2026-09-05._
