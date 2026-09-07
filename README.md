@@ -15,7 +15,7 @@ record that maintainers can audit.
 
 ## Selected Open-Source Work
 
-I have 28 authored external pull requests merged across eleven open-source
+I have 30 authored external pull requests merged across eleven open-source
 projects.
 
 ### Security and trust boundaries
@@ -107,21 +107,21 @@ projects.
   verified merge commit. The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
   whose notes feature #854 under Bug Fixes and name `@jjoanna2-debug` as a new
   contributor. PyPI 4.23.3 carries the corrected `fastmcp<4,>=3.4.4` range.
+- **LinkedIn MCP plugin and test reliability:** [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
+  added the opt-in Codex plugin released in [v4.24.0](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.24.0),
+  whose release notes credit `@jjoanna2-debug`. The plugin keeps its MCP package
+  pin synchronized with releases and preserves independent enablement. The
+  separate [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865)
+  isolates terminal and Python startup-hook tests from host settings without
+  changing production behavior. Both merged with all 14 final-head checks
+  passing and closed their linked issues; the test-only change is included in
+  the v4.24.0 source history.
 
 ## Current Upstream Work
 
-As of September 5, 2026, six authored external pull requests remain open. None
+As of September 7, 2026, four authored external pull requests remain open. None
 is presented as merged, shipped, or maintainer-approved.
 
-- **LinkedIn MCP [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
-  and [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865):**
-  #863 packages an opt-in, version-pinned Codex plugin with independent MCP
-  enablement and release synchronization; initialization and tool discovery
-  expose all 19 tools without starting Chrome or moving focus. The separate
-  test-only #865 isolates host terminal and Python startup-hook behavior; its
-  full local suite passes 2,982 tests with 148 declared skips and zero failures.
-  Both PRs include current upstream changes and remain open, mergeable, and
-  fully green, with maintainer review pending.
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
