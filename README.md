@@ -211,4 +211,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: 2026-09-05._
+_Last reviewed: September 7, 2026._
