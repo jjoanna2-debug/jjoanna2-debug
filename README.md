@@ -77,9 +77,8 @@ projects.
 - **Impeccable:** [#271](https://github.com/pbakaus/impeccable/pull/271)
   fixed a stale callback race that could let an older toast animate or remove a
   newer one.
-- **Make Interfaces Feel Better:** [#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1)
-  delivered the merged licensing and polish contribution that the earlier
-  profile rewrite omitted.
+- **Make Interfaces Feel Better:** I contributed licensing and interface polish
+  in [#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1).
 - **IINA:** [#6189](https://github.com/iina/iina/pull/6189) separates malformed
   URL input from a valid network URL that fails later while opening. The focused
   Swift fix merged into `develop` and closed [#6134](https://github.com/iina/iina/issues/6134)
@@ -89,8 +88,7 @@ projects.
   shutdown, preserves miniupnpc ownership and diagnostic status, and handles
   an empty discovery result explicitly. Both core maintainers approved the
   final revision, and the full CodeQL and cross-platform Sanity matrix passed
-  before merge. The verified squash commit credits me as its author and links
-  `jjoanna2-debug` again in its co-author trailer.
+  before merge. The squash commit credits me as its author.
 - **TokenTelemetry:** [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299)
   makes the default dashboard genuinely loopback-only, keeps explicit remote
   mode working, corrects the Node 20.9 minimum, updates vulnerable frontend
@@ -98,18 +96,18 @@ projects.
   reproduced the LAN exposure and verified both launch modes before merging;
   [#300](https://github.com/VasiHemanth/tokentelemetry/pull/300) landed first so
   lockfile-only dependency updates also reach existing installs. The merged
-  history credits `jjoanna2-debug` on all three contributed commits.
+  history credits me on all three contributed commits.
 - **LinkedIn MCP:** [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
   restores fresh-install initialization by keeping FastMCP below v4 while the
   current tool registrations still use the removed `exclude_args` argument.
   The merged change aligns project, lock, and wheel metadata and adds a
-  migration-trigger regression test. GitHub credits `jjoanna2-debug` on the
-  verified merge commit. The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
-  whose notes feature #854 under Bug Fixes and name `@jjoanna2-debug` as a new
+  migration-trigger regression test. GitHub credits me on the merge commit.
+  The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
+  whose notes feature #854 under Bug Fixes and name me as a new
   contributor. PyPI 4.23.3 carries the corrected `fastmcp<4,>=3.4.4` range.
 - **LinkedIn MCP plugin and test reliability:** [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
   added the opt-in Codex plugin released in [v4.24.0](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.24.0),
-  whose release notes credit `@jjoanna2-debug`. The plugin keeps its MCP package
+  whose release notes credit me. The plugin keeps its MCP package
   pin synchronized with releases and preserves independent enablement. The
   separate [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865)
   isolates terminal and Python startup-hook tests from host settings without
@@ -119,21 +117,20 @@ projects.
 
 ## Current Upstream Work
 
-As of September 7, 2026, four authored external pull requests remain open. None
-is presented as merged, shipped, or maintainer-approved.
+As of September 7, 2026, I have four external pull requests awaiting upstream
+decisions.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   remains open as the original Transmission integration path after the same
   focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
   GitHub reports #8984 as mergeable but unstable, with no approving maintainer
-  review or current check runs. The merged and verified delivery is the
-  Retransmission port; this entry remains only because the original upstream PR
-  is still open.
+  review or current check runs. Retransmission has merged my fix; the original
+  Transmission PR is still open.
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both are open and mergeable against `develop`. Maintainers are discussing the
   path-compatibility boundary for #6190, while #6191 awaits plugin-maintainer
-  review; neither is presented as accepted upstream work.
+  review.
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
@@ -211,4 +208,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: September 7, 2026._
+_Last reviewed: September 8, 2026._
