@@ -1,20 +1,17 @@
 # Jean-Claude Joanna
 
-I'm an Operations Analyst focused on process improvement, workflow automation,
-and reliable systems. I turn unclear failures into concrete improvements:
-understand the process, isolate the cause, implement the change, and verify the
-result.
+I work on software security, reliability, and open-source maintenance across
+Rust, Swift and macOS, TypeScript and Node.js, Python, and GitHub Actions.
 
-My public work applies that discipline to software security, reliability, and
-open-source maintenance across Rust, Swift and macOS, TypeScript and Node.js,
-Python, and GitHub Actions. It connects root-cause analysis and quality control
-with changes that teams can review and maintain.
+My strongest work sits at the point where a vague failure becomes a precise,
+reviewable change: isolate the defect, identify the trust boundary, make the
+smallest complete fix, and prove it with tests, builds, static analysis, or a
+reproducible field check. I care about patches that survive contact with real
+maintainers, not code that merely looks plausible in a diff.
 
-Based in Lisbon. Native German, French, and English.
-[Professional background and operations experience](https://www.linkedin.com/in/jeanclaudejoanna/).
-
-The portfolio below separates upstream-merged contributions, open reviews, and
-personal projects. Each selected contribution links to its public evidence.
+I build in public. The links below distinguish work merged upstream from work
+that is still under review, so the profile stays useful as a portfolio and as a
+record that maintainers can audit.
 
 ## Selected Open-Source Work
 
@@ -67,10 +64,10 @@ projects.
 
 ### Reliability and product behavior
 
-- **GoalBuddy:** aligned runtime receipt contracts ([#28](https://github.com/tolimarchuk/goalbuddy/pull/28)),
-  exposed residual Codex state ([#29](https://github.com/tolimarchuk/goalbuddy/pull/29)),
-  added deterministic reset cleanup ([#30](https://github.com/tolimarchuk/goalbuddy/pull/30)),
-  and fixed local-board rendering for multiple active tasks ([#34](https://github.com/tolimarchuk/goalbuddy/pull/34)).
+- **GoalBuddy:** aligned runtime receipt contracts ([#28](https://github.com/tolibear/goalbuddy/pull/28)),
+  exposed residual Codex state ([#29](https://github.com/tolibear/goalbuddy/pull/29)),
+  added deterministic reset cleanup ([#30](https://github.com/tolibear/goalbuddy/pull/30)),
+  and fixed local-board rendering for multiple active tasks ([#34](https://github.com/tolibear/goalbuddy/pull/34)).
 - **liteparse:** [#313](https://github.com/run-llama/liteparse/pull/313)
   fixed batch-output path handling for nested input directories in both the Rust
   CLI and Python binding.
