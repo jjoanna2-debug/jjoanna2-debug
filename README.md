@@ -117,7 +117,7 @@ projects.
 
 ## Current Upstream Work
 
-As of September 7, 2026, I have four external pull requests awaiting upstream
+As of September 12, 2026, I have four external pull requests awaiting upstream
 decisions.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -130,7 +130,8 @@ decisions.
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both are open and mergeable against `develop`. Maintainers are discussing the
   path-compatibility boundary for #6190, while #6191 awaits plugin-maintainer
-  review.
+  review. Both PRs' CI and spelling workflows are waiting for repository
+  approval before they can run.
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
@@ -208,4 +209,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: September 8, 2026._
+_Last reviewed: September 12, 2026._
