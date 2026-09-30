@@ -64,10 +64,10 @@ projects.
 
 ### Reliability and product behavior
 
-- **GoalBuddy:** aligned runtime receipt contracts ([#28](https://github.com/tolibear/goalbuddy/pull/28)),
-  exposed residual Codex state ([#29](https://github.com/tolibear/goalbuddy/pull/29)),
-  added deterministic reset cleanup ([#30](https://github.com/tolibear/goalbuddy/pull/30)),
-  and fixed local-board rendering for multiple active tasks ([#34](https://github.com/tolibear/goalbuddy/pull/34)).
+- **GoalBuddy:** aligned runtime receipt contracts ([#28](https://github.com/tolimarchuk/goalbuddy/pull/28)),
+  exposed residual Codex state ([#29](https://github.com/tolimarchuk/goalbuddy/pull/29)),
+  added deterministic reset cleanup ([#30](https://github.com/tolimarchuk/goalbuddy/pull/30)),
+  and fixed local-board rendering for multiple active tasks ([#34](https://github.com/tolimarchuk/goalbuddy/pull/34)).
 - **liteparse:** [#313](https://github.com/run-llama/liteparse/pull/313)
   fixed batch-output path handling for nested input directories in both the Rust
   CLI and Python binding.
@@ -98,8 +98,8 @@ projects.
   lockfile-only dependency updates also reach existing installs. The merged
   history credits me on all three contributed commits.
 - **LinkedIn MCP:** [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
-  restores fresh-install initialization by keeping FastMCP below v4 while the
-  current tool registrations still use the removed `exclude_args` argument.
+  restored fresh-install initialization by keeping FastMCP below v4 while
+  tool registrations still depended on the removed `exclude_args` argument.
   The merged change aligns project, lock, and wheel metadata and adds a
   migration-trigger regression test. GitHub credits me on the merge commit.
   The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
@@ -117,7 +117,7 @@ projects.
 
 ## Current Upstream Work
 
-As of September 12, 2026, I have four external pull requests awaiting upstream
+As of September 30, 2026, I have four external pull requests awaiting upstream
 decisions.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -128,10 +128,11 @@ decisions.
   Transmission PR is still open.
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
-  Both are open and mergeable against `develop`. Maintainers are discussing the
-  path-compatibility boundary for #6190, while #6191 awaits plugin-maintainer
-  review. Both PRs' CI and spelling workflows are waiting for repository
-  approval before they can run.
+  Both remain open. #6190 is mergeable against `develop`, with the
+  path-compatibility boundary still under discussion; #6191 now has merge
+  conflicts and awaits plugin-maintainer review. Their CI and spelling
+  workflow runs ended with a failure status without executing any jobs,
+  so they provide no hosted validation.
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
@@ -209,4 +210,4 @@ more upstream work with public patches rather than private one-off output.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: September 12, 2026._
+_Last reviewed: September 30, 2026._
