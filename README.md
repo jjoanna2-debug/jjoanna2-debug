@@ -1,44 +1,39 @@
 # Jean-Claude Joanna
 
-I work on software security, reliability, and open-source maintenance across
-Rust, Swift and macOS, TypeScript and Node.js, Python, and GitHub Actions.
+I work on security and reliability in open-source software, mainly in Rust,
+Swift and macOS, TypeScript and Node.js, Python, and GitHub Actions.
 
-My strongest work sits at the point where a vague failure becomes a precise,
-reviewable change: isolate the defect, identify the trust boundary, make the
-smallest complete fix, and prove it with tests, builds, static analysis, or a
-reproducible field check. I care about patches that survive contact with real
-maintainers, not code that merely looks plausible in a diff.
+I like getting to the bottom of bugs: mail sent from the wrong account,
+files written where they shouldn't be, a dashboard exposed to the network,
+or an app that hangs on shutdown. I work through the cause, the fix, and the
+tests needed to keep it from happening again.
 
-I build in public. The links below distinguish work merged upstream from work
-that is still under review, so the profile stays useful as a portfolio and as a
-record that maintainers can audit.
+Here are some of my contributions and the work still awaiting a decision.
 
 ## Selected Open-Source Work
 
-I have 30 authored external pull requests merged across eleven open-source
-projects.
+I've had 30 pull requests merged across eleven open-source projects.
 
 ### Security and trust boundaries
 
 - **Apple Mail SMTP delivery:** [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214)
   shipped in [v2.17.8](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.17.8).
-  It repairs IMAP reply/forward routing, preserves reply-thread headers, rejects
-  unrelated sending identities, and prevents silent transport fallback or lost
-  forward content. The [maintainer credited the diagnosis and regression coverage](https://github.com/sweetrb/apple-mail-mcp/pull/214#issuecomment-5551476302),
-  specifically recognizing the latent cross-account-send gap. GitHub records me
-  as the [merge commit author](https://github.com/sweetrb/apple-mail-mcp/commit/0a75ee7c455d0f4d09bc2ad23386b4d6e61c1d1f);
-  the release notes document the contributed fixes. The released tree exactly
-  matches the tested PR head.
+  It fixed IMAP reply/forward routing, preserved reply-thread headers, rejected
+  unrelated sending identities, and prevented silent transport fallback or lost
+  forward content. The [maintainer's review](https://github.com/sweetrb/apple-mail-mcp/pull/214#issuecomment-5551476302)
+  explains the cross-account sending issue and the regression tests.
+
 - **Apple Mail MCP:** [#97](https://github.com/sweetrb/apple-mail-mcp/pull/97)
   hardened account-scoped mail operations, sender authorization, attachment
   limits, and file creation; the owner verified 392 unit tests, 47 integration
   tests, and a reproducible bundle before it shipped in [v2.8.10](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.8.10).
+
 - **Dependency security:** [#119](https://github.com/sweetrb/apple-mail-mcp/pull/119)
   and [#123](https://github.com/sweetrb/apple-mail-mcp/pull/123) completed the
   `brace-expansion` remediation across the legacy CommonJS and current paths.
-  The work kept the advisory visible, preserved API compatibility, and used a
-  10,000-character reproduction plus an independent v5 floor to make the
-  sequence-bound performance gap checkable.
+  I included a 10,000-character reproduction to demonstrate the performance
+  problem and kept the remediation compatible with existing callers.
+
 - **Apple Mail hardening:** the August batch covered a repository threat model
   ([#158](https://github.com/sweetrb/apple-mail-mcp/pull/158)), atomic batch
   source pairing ([#159](https://github.com/sweetrb/apple-mail-mcp/pull/159)),
@@ -49,18 +44,18 @@ projects.
   the Codex MCP runtime pin ([#166](https://github.com/sweetrb/apple-mail-mcp/pull/166)),
   constrained outbound attachment reads ([#168](https://github.com/sweetrb/apple-mail-mcp/pull/168)),
   and shared validation schemas ([#169](https://github.com/sweetrb/apple-mail-mcp/pull/169)).
-  These merged changes were included in the historical [v2.10.31](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.10.31)
-  release milestone; that is not the current latest release.
+  These changes shipped in [v2.10.31](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.10.31).
+
 - **Markdown Preview:** [#152](https://github.com/pluk-inc/markdown-preview/pull/152)
   fixed Quick Look asset containment and [#156](https://github.com/pluk-inc/markdown-preview/pull/156)
   added native trackpad pinch zoom, both credited in [v0.0.29](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.29).
   [#185](https://github.com/pluk-inc/markdown-preview/pull/185) repaired
   large-document selection behavior in read mode and shipped in [v0.0.34](https://github.com/pluk-inc/markdown-preview/releases/tag/v0.0.34).
+
 - **Downstream credit:** the Apple Mail maintainer credited the original
   dependency finding in maintainer-authored follow-through for [Apple Notes #113](https://github.com/sweetrb/apple-notes-mcp/pull/113),
   [Apple Numbers #49](https://github.com/sweetrb/apple-numbers-mcp/pull/49),
   and [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60).
-  Those are not PRs authored by me.
 
 ### Reliability and product behavior
 
@@ -68,27 +63,33 @@ projects.
   exposed residual Codex state ([#29](https://github.com/tolimarchuk/goalbuddy/pull/29)),
   added deterministic reset cleanup ([#30](https://github.com/tolimarchuk/goalbuddy/pull/30)),
   and fixed local-board rendering for multiple active tasks ([#34](https://github.com/tolimarchuk/goalbuddy/pull/34)).
+
 - **liteparse:** [#313](https://github.com/run-llama/liteparse/pull/313)
   fixed batch-output path handling for nested input directories in both the Rust
   CLI and Python binding.
+
 - **Snapzy:** [#256](https://github.com/duongductrong/Snapzy/pull/256)
   removed Quick Access dismissal lag by separating immediate UI removal from
   deferred cleanup.
+
 - **Impeccable:** [#271](https://github.com/pbakaus/impeccable/pull/271)
   fixed a stale callback race that could let an older toast animate or remove a
   newer one.
+
 - **Make Interfaces Feel Better:** I contributed licensing and interface polish
   in [#1](https://github.com/jakubkrehel/make-interfaces-feel-better/pull/1).
+
 - **IINA:** [#6189](https://github.com/iina/iina/pull/6189) separates malformed
   URL input from a valid network URL that fails later while opening. The focused
-  Swift fix merged into `develop` and closed [#6134](https://github.com/iina/iina/issues/6134)
-  without expanding into the separate `file://` acceptance path.
+  Swift fix merged into `develop` and closed [#6134](https://github.com/iina/iina/issues/6134).
+
 - **Retransmission:** [#256](https://github.com/retransmission/retransmission/pull/256)
   moves blocking UPnP gateway validation off the session thread during
   shutdown, preserves miniupnpc ownership and diagnostic status, and handles
   an empty discovery result explicitly. Both core maintainers approved the
   final revision, and the full CodeQL and cross-platform Sanity matrix passed
   before merge. The squash commit credits me as its author.
+
 - **TokenTelemetry:** [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299)
   makes the default dashboard genuinely loopback-only, keeps explicit remote
   mode working, corrects the Node 20.9 minimum, updates vulnerable frontend
@@ -96,15 +97,16 @@ projects.
   reproduced the LAN exposure and verified both launch modes before merging;
   [#300](https://github.com/VasiHemanth/tokentelemetry/pull/300) landed first so
   lockfile-only dependency updates also reach existing installs. The merged
-  history credits me on all three contributed commits.
+  change includes all three of my contributed commits.
+
 - **LinkedIn MCP:** [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
   restored fresh-install initialization by keeping FastMCP below v4 while
   tool registrations still depended on the removed `exclude_args` argument.
-  The merged change aligns project, lock, and wheel metadata and adds a
-  migration-trigger regression test. GitHub credits me on the merge commit.
-  The fix shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
+  The fix aligned project, lock, and wheel metadata and added a regression test.
+  It shipped in [v4.23.3](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.23.3),
   whose notes feature #854 under Bug Fixes and name me as a new
-  contributor. PyPI 4.23.3 carries the corrected `fastmcp<4,>=3.4.4` range.
+  contributor.
+
 - **LinkedIn MCP plugin and test reliability:** [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863)
   added the opt-in Codex plugin released in [v4.24.0](https://github.com/stickerdaniel/linkedin-mcp-server/releases/tag/v4.24.0),
   whose release notes credit me. The plugin keeps its MCP package
@@ -112,20 +114,17 @@ projects.
   separate [#865](https://github.com/stickerdaniel/linkedin-mcp-server/pull/865)
   isolates terminal and Python startup-hook tests from host settings without
   changing production behavior. Both merged with all 14 final-head checks
-  passing and closed their linked issues; the test-only change is included in
-  the v4.24.0 source history.
+  passing and closed their linked issues.
 
 ## Current Upstream Work
 
-As of September 30, 2026, I have four external pull requests awaiting upstream
+As of October 12, 2026, I have four pull requests awaiting upstream
 decisions.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
-  remains open as the original Transmission integration path after the same
-  focused fix merged in Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
-  GitHub reports #8984 as mergeable but unstable, with no approving maintainer
-  review or current check runs. Retransmission has merged my fix; the original
-  Transmission PR is still open.
+  my shutdown fix is still open there. The same fix has already merged in
+  Retransmission [#256](https://github.com/retransmission/retransmission/pull/256).
+
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   focused fixes for portable playlist paths and plugin default-branch updates.
   Both remain open. #6190 is mergeable against `develop`, with the
@@ -133,25 +132,17 @@ decisions.
   conflicts and awaits plugin-maintainer review. Their CI and spelling
   workflow runs ended with a failure status without executing any jobs,
   so they provide no hosted validation.
+
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
   cleanup, registry contracts, and bounded async polling. The PR is open and
   mergeable with a passing DCO check.
 
-The personal-fork validation PRs [#4](https://github.com/jjoanna2-debug/iina/pull/4),
-[#5](https://github.com/jjoanna2-debug/iina/pull/5), and [#6](https://github.com/jjoanna2-debug/iina/pull/6)
-merged into the fork's `develop` branch. #4 validated the change that later
-merged upstream as IINA #6189; #5 and #6 remain supporting fork history for the
-two open upstream reviews, not upstream acceptance or release evidence.
-
 ## Featured Repository
 
-[`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is a
-compact Rust 2024 repository for learning, testing, and experimentation. It is
-not a production security product, scanner warranty, or security audit. The
-current public `main` is `4a1b9f0`; the repository has no runtime dependencies,
-uses an exact Rust 1.97.1 toolchain, and protects its `Repository smoke test`
-check.
+[`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is
+my Rust 2024 lab for repository tooling and automation. It has no runtime
+dependencies, uses Rust 1.97.1, and requires its `Repository smoke test` check.
 
 After 19 focused changes merged as [PRs #8–#26](https://github.com/jjoanna2-debug/test-project-tbd/pulls?q=is%3Apr+author%3Ajjoanna2-debug),
 the repository doctor provides:
@@ -165,21 +156,16 @@ the repository doctor provides:
 - checks that defend the repository's own CI and Dependabot guarantees from
   silent regression.
 
-The current [Basic Checks run](https://github.com/jjoanna2-debug/test-project-tbd/actions/runs/31983407142)
-passed. The repository is deliberately compact: the value is in the enforced
-contract that security controls, documentation, and automation describe the
-same system.
+The [Basic Checks run](https://github.com/jjoanna2-debug/test-project-tbd/actions/runs/31983407142)
+for the current main revision passed.
 
-## Evidence-Bounded Reports
+## Bug Reports
 
-- [Codex #34807](https://github.com/openai/codex/issues/34807) and [#33994](https://github.com/openai/codex/issues/33994)
-  remain open reports with evidence tied to reproducible desktop and scan-state
-  failures.
-- [ProtonMail iOS Mail #109](https://github.com/ProtonMail/ios-mail/issues/109)
-  remains an open, unresolved regression report.
-- [Codex #33951](https://github.com/openai/codex/issues/33951) is retained as
-  historical context, but GitHub closed it as not planned on August 16, 2026;
-  it is not counted as an open report.
+My open reports are [Proton Mail's iOS regressions](https://github.com/ProtonMail/ios-mail/issues/109)
+and [Get Fable's plugin-directory listing](https://github.com/imMamdouhaboammar/get-fable/issues/202).
+
+I closed my Codex reports on the [desktop configuration reset](https://github.com/openai/codex/issues/34807)
+and the [stuck security scan](https://github.com/openai/codex/issues/33994).
 
 ## What I Work On
 
@@ -193,21 +179,17 @@ same system.
 
 ## Working Standard
 
-I keep changes narrow enough to audit, but complete enough to merge. Security
-boundaries fail closed. Public claims are tied to evidence. Generated artifacts
-are rebuilt and compared. Documentation is updated in the same change when the
-contract moves. A green check is useful only when it validates the revision
-actually under review.
+I keep patches focused, include a reproduction when I can, and test the behavior
+I'm changing. I update the documentation alongside the implementation so the
+next person doesn't have to reconstruct what happened.
 
 ## Sponsorship and Engineering Work
 
-I am open to sponsorship, focused security reviews, repository hardening,
-maintainer support, difficult bug fixes, CI modernization, and technical writing
-for developer tools. A good engagement has a scoped review or patch,
-reproducible verification, and durable handoff documentation. Sponsorship funds
-more upstream work with public patches rather than private one-off output.
+I'm available for security reviews, difficult bug fixes, repository maintenance,
+CI improvements, and technical writing for developer tools. Sponsorship helps
+me spend more time on open-source work.
 
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Last reviewed: September 30, 2026._
+_Updated October 12, 2026._
