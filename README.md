@@ -35,8 +35,9 @@ Photos, and Notes.
   All three merged on October 24, with each PR crediting my original work.
   The ports preserve the existing schemas and integer behavior across 26
   Numbers tools, 21 Photos tools, and 89 Notes tools. Numbers shipped in
-  [v1.2.11](https://github.com/sweetrb/apple-numbers-mcp/releases/tag/v1.2.11)
-  and Photos in [v2.1.22](https://github.com/sweetrb/apple-photos-mcp/releases/tag/v2.1.22).
+  [v1.2.11](https://github.com/sweetrb/apple-numbers-mcp/releases/tag/v1.2.11),
+  Photos in [v2.1.22](https://github.com/sweetrb/apple-photos-mcp/releases/tag/v2.1.22),
+  and Notes in [v2.15.11](https://github.com/sweetrb/apple-notes-mcp/releases/tag/v2.15.11).
 
 - **Apple Mail SMTP delivery:** [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214)
   shipped in [v2.17.8](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.17.8).
