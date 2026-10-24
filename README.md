@@ -149,10 +149,11 @@ Photos, and Notes.
 I have five open upstream pull requests as of October 24, 2026.
 
 - **Apple Mail [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329):**
-  I'm tightening mail-merge transport and sender selection, preserving literal
+  I'm fixing SMTP fallback and sender selection, preserving literal
   template values, and retaining Bcc in saved drafts and Sent copies without
-  exposing it in delivered messages. The PR also adds Codex setup guidance and
-  a provider OAuth proposal. It is open for review; live delivery and rendering
+  exposing it in delivered messages. I'm also clarifying setup diagnostics and
+  proposing a smoother Codex sign-in flow, building on my LinkedIn MCP plugin
+  work. It is open for review; live delivery and rendering
   checks are still required, and OAuth is not implemented.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
