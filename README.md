@@ -12,7 +12,9 @@ Here are some of my contributions and the work still awaiting a decision.
 
 ## Selected Open-Source Work
 
-I've had 30 pull requests merged across eleven open-source projects.
+I've authored 30 merged pull requests across 11 open-source projects.
+Maintainers have also adopted and ported my work across Apple Mail, Numbers,
+Photos, and Notes.
 
 ### Security and trust boundaries
 
