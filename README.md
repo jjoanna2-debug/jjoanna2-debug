@@ -16,6 +16,16 @@ I've had 30 pull requests merged across eleven open-source projects.
 
 ### Security and trust boundaries
 
+- **Apple Mail schema security:** I migrated the vulnerable Zod 3 dependency
+  to patched Zod 4 while preserving all 52 tools' schema contracts, integer
+  validation, and string-valued template records. Rob Sweet carried my
+  [#326](https://github.com/sweetrb/apple-mail-mcp/pull/326) forward unchanged in
+  [#327](https://github.com/sweetrb/apple-mail-mcp/pull/327), which merged with me
+  credited as co-author. He verified a byte-identical rebuild and live IMAP
+  parity; Node 20, 22, and 24 checks, IMAP integration, the version guard, and
+  CodeQL passed. The change shipped in
+  [v2.20.29](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.29).
+
 - **Apple Mail SMTP delivery:** [#214](https://github.com/sweetrb/apple-mail-mcp/pull/214)
   shipped in [v2.17.8](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.17.8).
   It fixed IMAP reply/forward routing, preserved reply-thread headers, rejected
@@ -118,7 +128,7 @@ I've had 30 pull requests merged across eleven open-source projects.
 
 ## Current Upstream Work
 
-As of October 12, 2026, I have four pull requests awaiting upstream
+As of October 24, 2026, I have four pull requests awaiting upstream
 decisions.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
@@ -161,8 +171,8 @@ for the current main revision passed.
 
 ## Bug Reports
 
-My open reports are [Proton Mail's iOS regressions](https://github.com/ProtonMail/ios-mail/issues/109)
-and [Get Fable's plugin-directory listing](https://github.com/imMamdouhaboammar/get-fable/issues/202).
+My report on [Proton Mail's iOS regressions](https://github.com/ProtonMail/ios-mail/issues/109)
+remains open.
 
 I closed my Codex reports on the [desktop configuration reset](https://github.com/openai/codex/issues/34807)
 and the [stuck security scan](https://github.com/openai/codex/issues/33994).
@@ -192,4 +202,4 @@ me spend more time on open-source work.
 Professional contact:
 [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna)
 
-_Updated October 12, 2026._
+_Updated October 24, 2026._
