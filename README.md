@@ -146,15 +146,18 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have five open upstream pull requests as of October 24, 2026.
+I have six open upstream pull requests as of October 24, 2026.
 
-- **Apple Mail [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329):**
-  I'm fixing SMTP fallback and sender selection, preserving literal
-  template values, and retaining Bcc in saved drafts and Sent copies without
-  exposing it in delivered messages. I'm also clarifying setup diagnostics and
-  proposing a smoother Codex sign-in flow, building on my LinkedIn MCP plugin
-  work. It is open for review; live delivery and rendering
-  checks are still required, and OAuth is not implemented.
+- **Apple Mail composition [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329):**
+  my fixes prevent silent SMTP fallback and ambiguous sender selection, preserve
+  literal template content, and retain Bcc in private drafts and Sent copies
+  without exposing it in delivered messages. The PR is open for review;
+  native Mail.app rendering remains a separate limitation.
+
+- **Apple Mail plugin setup [#330](https://github.com/sweetrb/apple-mail-mcp/pull/330):**
+  I'm proposing clearer setup and optional provider OAuth for the existing Codex
+  plugin, drawing on my merged LinkedIn MCP plugin work. This documentation-only
+  proposal is separate from the compose fixes; OAuth is not implemented.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
