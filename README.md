@@ -146,7 +146,14 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have four open pull requests as of October 24, 2026.
+I have five open upstream pull requests as of October 24, 2026.
+
+- **Apple Mail [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329):**
+  I'm tightening mail-merge transport and sender selection, preserving literal
+  template values, and retaining Bcc in saved drafts and Sent copies without
+  exposing it in delivered messages. The PR also adds Codex setup guidance and
+  a provider OAuth proposal. It remains a draft; live delivery and rendering
+  checks are still required, and OAuth is not implemented.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
