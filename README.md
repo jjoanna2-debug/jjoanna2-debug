@@ -185,8 +185,9 @@ I have six open upstream pull requests as of October 25, 2026.
   Deterministic packaging, guarded filesystem reads, compatibility manifests,
   and release-attachment automation accompany the archive. A real archive install
   initialized the bundled server with all 52 tools and seven resources.
-  All seven applicable checks passed. Both Apple Mail proposals remain open;
-  their 2.20.32 candidate versions are not releases and need merge-order coordination.
+  All seven applicable checks passed. I’m awaiting the maintainer’s decision on
+  the additional distribution channel and native-editor workflow; both proposals
+  remain open and unreleased.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
