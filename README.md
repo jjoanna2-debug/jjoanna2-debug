@@ -179,10 +179,12 @@ I have six open upstream pull requests as of October 25, 2026.
   All seven applicable checks passed. It supports host-driven native composition;
   it does not automate Mail or repair the AppleScript body setter.
 
-- **Apple Mail portable plugin [#334](https://github.com/sweetrb/apple-mail-mcp/pull/334):**
-  I added portable plugin and typed stdio manifests while preserving the existing
-  compatibility layout, identity, assets, and release pins. Version synchronization,
-  parity tests, and native-editor guidance accompany the configuration.
+- **Apple Mail installable plugin [#334](https://github.com/sweetrb/apple-mail-mcp/pull/334):**
+  I added a [downloadable plugin archive](https://github.com/sweetrb/apple-mail-mcp/actions/runs/40155794594/artifacts/12583734705)
+  bundling the server, skill, and assets without an npm download or node_modules.
+  Deterministic packaging, guarded filesystem reads, compatibility manifests,
+  and release-attachment automation accompany the archive. A real archive install
+  initialized the bundled server with all 52 tools and seven resources.
   All seven applicable checks passed. Both Apple Mail proposals remain open;
   their 2.20.32 candidate versions are not releases and need merge-order coordination.
 
