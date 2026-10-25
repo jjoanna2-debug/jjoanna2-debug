@@ -99,8 +99,9 @@ Photos, and Notes.
   merged on October 25. The fix recovers text from raw MIME where possible and
   stops an incomplete reply when recovery fails. Rob Sweet independently verified
   a live cross-account reply with its original quotation and thread headers;
-  all seven applicable checks passed. The merged 2.20.31 version bump is not yet
-  a published release. Outer quotation styling and the separately reported
+  all seven applicable checks passed. The fix shipped in
+  [v2.20.31](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.31).
+  Outer quotation styling and the separately reported
   historical Proton thread failures remain outside this fix.
 
 - **Apple Mail plugin setup:** I wrote the Codex setup guide and provider OAuth
