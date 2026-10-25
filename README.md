@@ -171,7 +171,20 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have four open upstream pull requests as of October 25, 2026.
+I have six open upstream pull requests as of October 25, 2026.
+
+- **Apple Mail native prose renderer [#333](https://github.com/sweetrb/apple-mail-mcp/pull/333):**
+  I added a dependency-free HTML renderer and CLI that escape authored markup,
+  preserve Unicode and blank paragraphs, and inherit native font sizing.
+  All seven applicable checks passed. It supports host-driven native composition;
+  it does not automate Mail or repair the AppleScript body setter.
+
+- **Apple Mail portable plugin [#334](https://github.com/sweetrb/apple-mail-mcp/pull/334):**
+  I added portable plugin and typed stdio manifests while preserving the existing
+  compatibility layout, identity, assets, and release pins. Version synchronization,
+  parity tests, and native-editor guidance accompany the configuration.
+  All seven applicable checks passed. Both Apple Mail proposals remain open;
+  their 2.20.32 candidate versions are not releases and need merge-order coordination.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
