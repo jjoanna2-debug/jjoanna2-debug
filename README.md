@@ -98,8 +98,8 @@ Photos, and Notes.
   design in [#330](https://github.com/sweetrb/apple-mail-mcp/pull/330), now merged.
   Drawing on my LinkedIn MCP plugin work, I separated installation, macOS
   permissions, and mailbox authentication, with clear requirements for secure
-  account connections. The guide documents the existing plugin; OAuth remains
-  a proposed implementation.
+  account connections. My Google sign-in implementation is now in
+  [#332](https://github.com/sweetrb/apple-mail-mcp/pull/332), under review.
 
 - **GoalBuddy:** I aligned runtime receipt contracts ([#28](https://github.com/tolimarchuk/goalbuddy/pull/28)),
   exposed residual Codex state ([#29](https://github.com/tolimarchuk/goalbuddy/pull/29)),
@@ -162,7 +162,19 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have four open upstream pull requests as of October 25, 2026.
+I have six open upstream pull requests as of October 25, 2026.
+
+- **Apple Mail Google sign-in [#332](https://github.com/sweetrb/apple-mail-mcp/pull/332):**
+  I implemented browser-based authorization with PKCE, verified account identity,
+  Keychain storage, and shared token refresh for IMAP and SMTP. The implementation
+  passed 1,254 tests and a real Keychain persistence check. Live Google consent
+  and Gmail connection tests still require a registered desktop client.
+
+- **Apple Mail reply quotations [#331](https://github.com/sweetrb/apple-mail-mcp/pull/331):**
+  I fixed a failure path that could silently omit the original message from a
+  reply. The patch recovers text from raw MIME where possible and stops an
+  incomplete reply when recovery fails. Live self-addressed tests preserved
+  the quotation and thread headers; all seven applicable GitHub checks passed.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
