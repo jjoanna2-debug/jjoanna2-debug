@@ -10,11 +10,20 @@ the cause, develop a focused fix, and add tests to catch regressions.
 
 ## Selected Open-Source Work
 
-I've authored 30 merged pull requests across 11 open-source projects.
+I've authored 32 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
 ### Security and trust boundaries
+
+- **Apple Mail composition:** I fixed silent SMTP fallback, ambiguous sender
+  selection, and literal template substitution in
+  [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329), released in
+  [v2.20.30](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.30).
+  My changes preserve Bcc in private drafts and Sent copies without exposing
+  it in delivered messages. Rob Sweet confirmed the routing and substitution
+  bugs, added a README clarification, and merged the fixes after all seven
+  applicable checks passed.
 
 - **Apple Mail schema security:** I migrated the vulnerable Zod 3 dependency
   to patched Zod 4 while preserving all 52 tools' schema contracts, integer
@@ -85,6 +94,13 @@ Photos, and Notes.
 
 ### Reliability and product behavior
 
+- **Apple Mail plugin setup:** I wrote the Codex setup guide and provider OAuth
+  design in [#330](https://github.com/sweetrb/apple-mail-mcp/pull/330), now merged.
+  Drawing on my LinkedIn MCP plugin work, I separated installation, macOS
+  permissions, and mailbox authentication, with clear requirements for secure
+  account connections. The guide documents the existing plugin; OAuth remains
+  a proposed implementation.
+
 - **GoalBuddy:** I aligned runtime receipt contracts ([#28](https://github.com/tolimarchuk/goalbuddy/pull/28)),
   exposed residual Codex state ([#29](https://github.com/tolimarchuk/goalbuddy/pull/29)),
   added deterministic reset cleanup ([#30](https://github.com/tolimarchuk/goalbuddy/pull/30)),
@@ -146,18 +162,7 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have six open upstream pull requests as of October 24, 2026.
-
-- **Apple Mail composition [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329):**
-  my fixes prevent silent SMTP fallback and ambiguous sender selection, preserve
-  literal template content, and retain Bcc in private drafts and Sent copies
-  without exposing it in delivered messages. The PR is open for review;
-  native Mail.app rendering remains a separate limitation.
-
-- **Apple Mail plugin setup [#330](https://github.com/sweetrb/apple-mail-mcp/pull/330):**
-  I'm proposing clearer setup and optional provider OAuth for the existing Codex
-  plugin, drawing on my merged LinkedIn MCP plugin work. This documentation-only
-  proposal is separate from the compose fixes; OAuth is not implemented.
+I have four open upstream pull requests as of October 25, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
