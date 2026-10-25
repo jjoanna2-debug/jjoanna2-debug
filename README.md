@@ -10,7 +10,7 @@ the cause, develop a focused fix, and add tests to catch regressions.
 
 ## Selected Open-Source Work
 
-I've authored 32 merged pull requests across 11 open-source projects.
+I've authored 33 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
@@ -94,6 +94,15 @@ Photos, and Notes.
 
 ### Reliability and product behavior
 
+- **Apple Mail reply quotations:** I prevented unreadable originals from silently
+  disappearing from replies in [#331](https://github.com/sweetrb/apple-mail-mcp/pull/331),
+  merged on October 25. The fix recovers text from raw MIME where possible and
+  stops an incomplete reply when recovery fails. Rob Sweet independently verified
+  a live cross-account reply with its original quotation and thread headers;
+  all seven applicable checks passed. The merged 2.20.31 version bump is not yet
+  a published release. Outer quotation styling and the separately reported
+  historical Proton thread failures remain outside this fix.
+
 - **Apple Mail plugin setup:** I wrote the Codex setup guide and provider OAuth
   design in [#330](https://github.com/sweetrb/apple-mail-mcp/pull/330), now merged.
   The guide distinguishes plugin installation, macOS permissions, and mailbox
@@ -161,14 +170,7 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have five open upstream pull requests as of October 25, 2026.
-
-- **Apple Mail reply quotations [#331](https://github.com/sweetrb/apple-mail-mcp/pull/331):**
-  I fixed a failure path that could silently omit the original message from a
-  reply. The patch recovers text from raw MIME where possible and stops an
-  incomplete reply when recovery fails. Self-addressed iCloud tests preserved
-  the quotation and thread headers, and all seven applicable GitHub checks
-  passed. Separate reports of broken Proton conversations remain under investigation.
+I have four open upstream pull requests as of October 25, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
