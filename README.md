@@ -182,7 +182,20 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have four open upstream pull requests as of October 26, 2026.
+I have five open upstream pull requests as of October 26, 2026.
+
+- **Apple Mail [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337):**
+  I connected the prose renderer to Mail's native editor through an opt-in mode
+  in the existing send, draft, reply, and forward tools. It bypasses the
+  AppleScript body setter that put newly authored text inside quotations,
+  preserves native reply history, and guards sender selection, editor focus,
+  and clipboard recovery. I verified Proton drafts, delivery, and replies
+  through the candidate MCP tools, checking the received thread headers and
+  desktop Mail rendering. The full unit suite passes 1,323 tests, with nine
+  archive tests and 52 live integration tests passing. All seven applicable
+  hosted checks passed. Other providers, mobile clients, live forwarding, and
+  attachment delivery have not been revalidated. Candidate 2.20.34 is not yet
+  released.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
