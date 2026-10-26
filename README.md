@@ -189,13 +189,16 @@ I have five open upstream pull requests as of October 26, 2026.
   in the existing send, draft, reply, and forward tools. It bypasses the
   AppleScript body setter that put newly authored text inside quotations,
   preserves native reply history, and guards sender selection, editor focus,
-  and clipboard recovery. I verified immediate Proton sending and replies
-  through MCP, including received thread headers and desktop Mail rendering.
+  and clipboard recovery. An earlier candidate passed immediate Proton
+  sending and reply checks, including received thread headers and desktop
+  Mail rendering.
   This is an Apple Mail MCP change; it does not repair Proton Bridge or
   establish that saved replies retain their thread after synchronization
-  and reopening. The MCP unit suite passes 1,323 tests. Other providers,
-  mobile clients, live forwarding, and attachment delivery remain unverified.
-  Candidate 2.20.34 is not yet released.
+  and reopening. I merged the upstream draft-saving fixes into candidate
+  2.20.36; its unit suite passes 1,333 tests. A fresh live draft stopped at a
+  clipboard guard before saving, so live-save verification for this revision
+  remains outstanding. Other providers, mobile clients, live forwarding, and
+  attachment delivery remain unverified. The candidate is not yet released.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
