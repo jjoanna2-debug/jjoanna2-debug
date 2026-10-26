@@ -191,14 +191,11 @@ I have five open upstream pull requests as of October 26, 2026.
   preserves native reply history, and guards sender selection, editor focus,
   and clipboard recovery. I verified immediate Proton sending and replies
   through MCP, including received thread headers and desktop Mail rendering.
-  I also traced synchronized drafts' lost ancestry to Proton Bridge 3.27.1
-  and included a separately licensed source patch with regression tests.
-  All three affected Go package suites pass; the new behavior tests fail
-  against the unmodified release. The installed Bridge is unchanged, and the
-  patched save–synchronize–reopen cycle remains unverified. The MCP unit suite
-  passes 1,323 tests; hosted checks for this revision are pending. Other
-  providers, mobile clients, live forwarding, and attachment delivery remain
-  unverified. Candidate 2.20.34 is not yet released.
+  This is an Apple Mail MCP change; it does not repair Proton Bridge or
+  establish that saved replies retain their thread after synchronization
+  and reopening. The MCP unit suite passes 1,323 tests. Other providers,
+  mobile clients, live forwarding, and attachment delivery remain unverified.
+  Candidate 2.20.34 is not yet released.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
