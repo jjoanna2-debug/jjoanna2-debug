@@ -189,13 +189,16 @@ I have five open upstream pull requests as of October 26, 2026.
   in the existing send, draft, reply, and forward tools. It bypasses the
   AppleScript body setter that put newly authored text inside quotations,
   preserves native reply history, and guards sender selection, editor focus,
-  and clipboard recovery. I verified Proton drafts, delivery, and replies
-  through the candidate MCP tools, checking the received thread headers and
-  desktop Mail rendering. The full unit suite passes 1,323 tests, with nine
-  archive tests and 52 live integration tests passing. All seven applicable
-  hosted checks passed. Other providers, mobile clients, live forwarding, and
-  attachment delivery have not been revalidated. Candidate 2.20.34 is not yet
-  released.
+  and clipboard recovery. I verified immediate Proton sending and replies
+  through MCP, including received thread headers and desktop Mail rendering.
+  I also traced synchronized drafts' lost ancestry to Proton Bridge 3.27.1
+  and included a separately licensed source patch with regression tests.
+  All three affected Go package suites pass; the new behavior tests fail
+  against the unmodified release. The installed Bridge is unchanged, and the
+  patched save–synchronize–reopen cycle remains unverified. The MCP unit suite
+  passes 1,323 tests; hosted checks for this revision are pending. Other
+  providers, mobile clients, live forwarding, and attachment delivery remain
+  unverified. Candidate 2.20.34 is not yet released.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
