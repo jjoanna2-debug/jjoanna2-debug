@@ -94,6 +94,17 @@ Photos, and Notes.
 
 ### Reliability and product behavior
 
+- **Apple Mail plugin and native composition:** I built a self-contained plugin
+  archive and an HTML renderer that keeps new text consistent with Mail's native
+  font size while preserving paragraph spacing. Rob Sweet combined my work from
+  [#333](https://github.com/sweetrb/apple-mail-mcp/pull/333) and
+  [#334](https://github.com/sweetrb/apple-mail-mcp/pull/334) in
+  [#336](https://github.com/sweetrb/apple-mail-mcp/pull/336), with co-author credit,
+  and released it in [v2.20.33](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.33).
+  The release includes guarded packaging, optional artwork, portable plugin
+  manifests, and update guidance. Native-editor composition is available to
+  hosts with computer control; the existing MCP tools remain the default.
+
 - **Apple Mail reply quotations:** I prevented unreadable originals from silently
   disappearing from replies in [#331](https://github.com/sweetrb/apple-mail-mcp/pull/331),
   merged on October 25. The fix recovers text from raw MIME where possible and
@@ -171,23 +182,7 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have six open upstream pull requests as of October 25, 2026.
-
-- **Apple Mail native prose renderer [#333](https://github.com/sweetrb/apple-mail-mcp/pull/333):**
-  I added a dependency-free HTML renderer and CLI that escape authored markup,
-  preserve Unicode and blank paragraphs, and inherit native font sizing.
-  All seven applicable checks passed. It supports host-driven native composition;
-  it does not automate Mail or repair the AppleScript body setter.
-
-- **Apple Mail installable plugin [#334](https://github.com/sweetrb/apple-mail-mcp/pull/334):**
-  I added a [downloadable plugin archive](https://github.com/sweetrb/apple-mail-mcp/actions/runs/40155794594/artifacts/12583734705)
-  bundling the server, skill, and assets without an npm download or node_modules.
-  Deterministic packaging, guarded filesystem reads, compatibility manifests,
-  and release-attachment automation accompany the archive. A real archive install
-  initialized the bundled server with all 52 tools and seven resources.
-  All seven applicable checks passed. I’m awaiting the maintainer’s decision on
-  the additional distribution channel and native-editor workflow; both proposals
-  remain open and unreleased.
+I have four open upstream pull requests as of October 26, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -262,4 +257,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 25, 2026._
+_Updated October 26, 2026._
