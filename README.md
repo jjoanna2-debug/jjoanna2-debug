@@ -116,8 +116,8 @@ Photos, and Notes.
   [#336](https://github.com/sweetrb/apple-mail-mcp/pull/336), with co-author credit,
   and released it in [v2.20.33](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.33).
   The release includes guarded packaging, optional artwork, portable plugin
-  manifests, and update guidance. Native-editor composition is available to
-  hosts with computer control; the existing MCP tools remain the default.
+  manifests, and update guidance. The later #337 release adds native-editor
+  composition directly to the existing MCP tools as an opt-in mode.
 
 - **Apple Mail reply quotations:** I prevented unreadable originals from silently
   disappearing from replies in [#331](https://github.com/sweetrb/apple-mail-mcp/pull/331),
