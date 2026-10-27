@@ -10,7 +10,7 @@ the cause, develop a focused fix, and add tests to catch regressions.
 
 ## Selected Open-Source Work
 
-I've authored 33 merged pull requests across 11 open-source projects.
+I've authored 34 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
@@ -93,6 +93,20 @@ Photos, and Notes.
   and [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60).
 
 ### Reliability and product behavior
+
+- **Apple Mail native-editor composition:** I added an opt-in mode to the
+  existing send, draft, reply, and forward tools in
+  [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337), released in
+  [v2.20.37](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.37).
+  It bypasses the AppleScript body setter that put new text inside quotations,
+  preserves native reply history, and checks sender selection and editor focus.
+  Clipboard recovery respects newer clipboard owners and checks its size budget
+  before capturing data. I verified local draft save–close–reopen behavior,
+  retained reply headers, quotation separation, and exact clipboard restoration.
+  Rob Sweet independently verified all 1,340 unit tests and the rebased CI
+  checks before merging; he did not repeat the live Mail UI tests.
+  Provider-side conversation identity after a fresh server import remains
+  unverified.
 
 - **Apple Mail plugin and native composition:** I built a self-contained plugin
   archive and an HTML renderer that keeps new text consistent with Mail's native
@@ -182,23 +196,7 @@ Photos, and Notes.
 
 ## Current Upstream Work
 
-I have five open upstream pull requests as of October 26, 2026.
-
-- **Apple Mail [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337):**
-  I connected the prose renderer to Mail's native editor through an opt-in mode
-  in the existing send, draft, reply, and forward tools. It bypasses the
-  AppleScript body setter that put newly authored text inside quotations,
-  preserves native reply history, and guards sender selection, editor focus,
-  and clipboard recovery. I repaired image-clipboard limits and editor
-  targeting, then verified that a native reply saved, closed, and reopened
-  with its thread headers intact and new text outside the original quotation.
-  Both clipboard formats were restored byte-for-byte. I sent the original
-  test message only to my own address; the saved reply remains unsent.
-  Candidate 2.20.36 includes upstream's draft-saving fixes and passes 1,340
-  unit tests. This verifies Mail's local draft flow, not provider-side
-  conversation identity after a fresh server import. Other accounts,
-  mobile clients, forwarding, attachments, and signature rendering remain
-  unverified. The candidate is not yet released.
+I have four open upstream pull requests as of October 27, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -273,4 +271,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 26, 2026._
+_Updated October 27, 2026._
