@@ -1,18 +1,53 @@
 # Jean-Claude Joanna
 
-I work on open-source security and reliability, using Rust, Swift, TypeScript,
-and Python across native macOS apps, Node.js services, and GitHub Actions.
+I work on open-source security and reliability, from native macOS apps to
+Node.js services and GitHub Actions. I use Rust, Swift, TypeScript, and Python
+to fix the details that shape whether software can be trusted: which account
+sends a message, where files land, who can reach a dashboard, and whether an
+app shuts down cleanly. I trace the cause, develop a focused fix, and test the
+behavior that matters.
 
-I investigate bugs that affect how software behaves in practice: email sent
-from the wrong account, files written outside their intended location,
-dashboards exposed to the network, and apps that hang on shutdown. I trace
-the cause, develop a focused fix, and add tests to catch regressions.
+## Featured by XERJ
 
-## Selected Open-Source Work
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/jjoanna2-debug/badge.svg)](https://hub.xerj.org/contributors/jjoanna2-debug)
+
+On October 28, 2026, [XERJ featured](https://hub.xerj.org/contributors/jjoanna2-debug)
+my [native Mail composition work](https://github.com/sweetrb/apple-mail-mcp/pull/337)
+as a worked reference for coding agents facing similar problems, with attribution
+to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
+
+## Selected open-source work
 
 I've authored 34 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
+
+- **Native Mail composition:** I added opt-in native-editor composition to
+  the existing send, draft, reply, and forward tools, keeping new text outside
+  native quotations and preserving reply history. [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337)
+  shipped in [v2.20.37](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.37).
+- **Mail delivery and privacy:** I fixed silent SMTP fallback, ambiguous sender
+  selection, and literal template substitution while preserving Bcc privacy in
+  [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329).
+- **Reliable shutdown:** I moved blocking gateway validation off the session
+  thread in [Retransmission #256](https://github.com/retransmission/retransmission/pull/256),
+  preserving ownership and diagnostic status.
+- **Safer defaults:** I made the TokenTelemetry dashboard loopback-only by
+  default, with explicit remote access still available, in
+  [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299).
+- **Native apps and tooling:** I fixed nested batch-output paths in the Rust
+  CLI and Python binding of [liteparse #313](https://github.com/run-llama/liteparse/pull/313)
+  and improved URL error handling in [IINA #6189](https://github.com/iina/iina/pull/6189).
+- **Developer tools:** I restored fresh-install initialization for LinkedIn
+  MCP in [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
+  and added its opt-in Codex plugin in [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863).
+
+<details>
+<summary><strong>More contribution details and release evidence</strong></summary>
+
+The work below includes authored merges and, where identified, maintainer-led
+continuations and credited ports. The latter are not counted as my authored
+merges.
 
 ### Security and trust boundaries
 
@@ -106,7 +141,9 @@ Photos, and Notes.
   Rob Sweet independently verified all 1,340 unit tests and the rebased CI
   checks before merging; he did not repeat the live Mail UI tests.
   Provider-side conversation identity after a fresh server import remains
-  unverified.
+  unverified. XERJ's [Apple Mail MCP corpus](https://hub.xerj.org/corpus/sweetrb--apple-mail-mcp)
+  covers the whole repository at this merged revision, not only the files
+  changed in the selected commit.
 
 - **Apple Mail plugin and native composition:** I built a self-contained plugin
   archive and an HTML renderer that keeps new text consistent with Mail's native
@@ -194,9 +231,11 @@ Photos, and Notes.
   production behavior. Both merged with all 14 checks on their final revisions
   passing and closed their linked issues.
 
-## Current Upstream Work
+</details>
 
-I have four open upstream pull requests as of October 27, 2026.
+## Current upstream work
+
+I have four open upstream pull requests as of October 28, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -215,7 +254,7 @@ I have four open upstream pull requests as of October 27, 2026.
   cleanup, registry contracts, and bounded async polling. The PR is open and
   mergeable with a passing DCO check.
 
-## Featured Repository
+## Featured repository
 
 [`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is
 my Rust 2024 lab for repository tooling and automation. It has no runtime
@@ -237,7 +276,7 @@ all now merged. It supports:
 The [Basic Checks run](https://github.com/jjoanna2-debug/test-project-tbd/actions/runs/31983407142)
 for the current main revision passed.
 
-## Bug Reports
+## Bug reports
 
 My report on [Proton Mail's iOS regressions](https://github.com/ProtonMail/ios-mail/issues/109)
 remains open.
@@ -245,7 +284,7 @@ remains open.
 I closed my Codex reports on the [desktop configuration reset](https://github.com/openai/codex/issues/34807)
 and the [stuck security scan](https://github.com/openai/codex/issues/33994).
 
-## What I Work On
+## What I work on
 
 My work spans:
 
@@ -257,13 +296,13 @@ My work spans:
 - technical documentation and release evidence checked against the
   implementation.
 
-## How I Work
+## How I work
 
 I keep patches focused, include a reproduction when I can, and test the behavior
 I'm changing. I update the documentation alongside the implementation so the
 next person doesn't have to reconstruct what happened.
 
-## Sponsorship and Engineering Work
+## Sponsorship and engineering work
 
 I'm available for security reviews, difficult bug fixes, repository maintenance,
 CI improvements, and technical writing for developer tools. Sponsorship helps
@@ -271,4 +310,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 27, 2026._
+_Updated October 28, 2026._
