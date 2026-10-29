@@ -235,7 +235,12 @@ merges.
 
 ## Current upstream work
 
-I have four open upstream pull requests as of October 28, 2026.
+I have five open upstream pull requests as of October 29, 2026.
+
+- **Apple Mail [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350):**
+  I added explicit source-mailbox selection for replies and forwards, with
+  checks that reject ambiguous or changed messages and a bounded wait for
+  Mail's native editor to become available. The repair is under review.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -310,4 +315,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 28, 2026._
+_Updated October 29, 2026._
