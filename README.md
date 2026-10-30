@@ -22,10 +22,14 @@ I've authored 37 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
-- **Accurate Mail lookups:** I corrected an Inbox lookup that could return a
+- **Accurate, efficient Mail lookups:** I corrected an Inbox lookup that could return a
   different copy from All Mail, and made missing-account errors specific enough
   to act on. [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351)
   shipped in [v2.20.44](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.44).
+  I then removed repeated receiving-server queries while preserving cache
+  expiration and provider isolation in
+  [#352](https://github.com/sweetrb/apple-mail-mcp/pull/352), released in
+  [v2.20.45](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.45).
 - **Account-scoped Mail replies:** I bound replies and forwards for numeric
   message IDs to their source account and mailbox, rejecting ambiguous scopes
   and changed message identities. [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350)
