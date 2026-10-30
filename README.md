@@ -18,7 +18,7 @@ to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
 
 ## Selected open-source work
 
-I've authored 36 merged pull requests across 11 open-source projects.
+I've authored 37 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
@@ -139,6 +139,13 @@ merges.
   and [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60).
 
 ### Reliability and product behavior
+
+- **Efficient Mail lookups:** I cached receiving-server lookups alongside
+  mailbox names, sharing their expiration and invalidation while preserving
+  literal Inbox scope when the host cannot be read. I also completed the
+  scoped-error documentation in [#352](https://github.com/sweetrb/apple-mail-mcp/pull/352),
+  merged on October 30. Rob confirmed that both #351 follow-ups are complete.
+  The merge sets version 2.20.45; its release is not yet published.
 
 - **Apple Mail Inbox routing:** I fixed a Gmail workaround that also matched
   Proton because both expose an All Mail folder. Search, listing, and recent-mail
@@ -267,13 +274,7 @@ merges.
 
 ## Current upstream work
 
-I have five open upstream pull requests as of October 30, 2026.
-
-- **Apple Mail [#352](https://github.com/sweetrb/apple-mail-mcp/pull/352):** I cached
-  receiving-server lookups with mailbox names to avoid redundant AppleScript
-  calls. Failed lookups keep the request scoped to the Inbox; expired provider
-  identities are not reused. The PR also addresses Rob's remaining documentation
-  note from #351.
+I have four open upstream pull requests as of October 30, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
