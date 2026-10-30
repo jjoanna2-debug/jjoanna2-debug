@@ -18,7 +18,7 @@ to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
 
 ## Selected open-source work
 
-I've authored 34 merged pull requests across 11 open-source projects.
+I've authored 35 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
@@ -129,6 +129,15 @@ merges.
 
 ### Reliability and product behavior
 
+- **Apple Mail scoped replies and forwards:** I added explicit source-account
+  and mailbox selection in
+  [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350), merged on October 30.
+  The fix rejects ambiguous or changed source messages, preserves exact mailbox
+  selection, and gives Mail's native editor a bounded time to become available.
+  Rob Sweet independently reran all 1,462 unit tests and reproduced the build
+  before merging. The change shipped in the
+  [v2.20.43 plugin release](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.43).
+
 - **Apple Mail native-editor composition:** I added an opt-in mode to the
   existing send, draft, reply, and forward tools in
   [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337), released in
@@ -235,12 +244,7 @@ merges.
 
 ## Current upstream work
 
-I have five open upstream pull requests as of October 29, 2026.
-
-- **Apple Mail [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350):**
-  I added explicit source-mailbox selection for replies and forwards, with
-  checks that reject ambiguous or changed messages and a bounded wait for
-  Mail's native editor to become available. The repair is under review.
+I have four open upstream pull requests as of October 30, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -315,4 +319,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 29, 2026._
+_Updated October 30, 2026._
