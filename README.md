@@ -22,6 +22,10 @@ I've authored 35 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
+- **Account-scoped Mail replies:** I bound replies and forwards for numeric
+  message IDs to their source account and mailbox, rejecting ambiguous scopes
+  and changed message identities. [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350)
+  shipped in [v2.20.43](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.43).
 - **Native Mail composition:** I added opt-in native-editor composition to
   the existing send, draft, reply, and forward tools, keeping new text outside
   native quotations and preserving reply history. [#337](https://github.com/sweetrb/apple-mail-mcp/pull/337)
@@ -35,12 +39,15 @@ Photos, and Notes.
 - **Safer defaults:** I made the TokenTelemetry dashboard loopback-only by
   default, with explicit remote access still available, in
   [#299](https://github.com/VasiHemanth/tokentelemetry/pull/299).
-- **Native apps and tooling:** I fixed nested batch-output paths in the Rust
-  CLI and Python binding of [liteparse #313](https://github.com/run-llama/liteparse/pull/313)
-  and improved URL error handling in [IINA #6189](https://github.com/iina/iina/pull/6189).
-- **Developer tools:** I restored fresh-install initialization for LinkedIn
-  MCP in [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854)
-  and added its opt-in Codex plugin in [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863).
+- **Native macOS apps:** I kept Quick Look's rewritten image reads inside the
+  document's directory in [Markdown Preview #152](https://github.com/pluk-inc/markdown-preview/pull/152)
+  and distinguished invalid URLs from network load failures in
+  [IINA #6189](https://github.com/iina/iina/pull/6189).
+- **Developer tools:** I fixed nested batch-output paths in the Rust CLI and
+  Python binding of [liteparse #313](https://github.com/run-llama/liteparse/pull/313),
+  restored fresh-install initialization for LinkedIn MCP in
+  [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854), and
+  added its opt-in Codex plugin in [#863](https://github.com/stickerdaniel/linkedin-mcp-server/pull/863).
 
 <details>
 <summary><strong>More contribution details and release evidence</strong></summary>
