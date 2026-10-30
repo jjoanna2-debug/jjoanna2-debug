@@ -145,7 +145,8 @@ merges.
   literal Inbox scope when the host cannot be read. I also completed the
   scoped-error documentation in [#352](https://github.com/sweetrb/apple-mail-mcp/pull/352),
   merged on October 30. Rob confirmed that both #351 follow-ups are complete.
-  The merge sets version 2.20.45; its release is not yet published.
+  The change is included in
+  [v2.20.45](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.45).
 
 - **Apple Mail Inbox routing:** I fixed a Gmail workaround that also matched
   Proton because both expose an All Mail folder. Search, listing, and recent-mail
