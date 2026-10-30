@@ -251,7 +251,14 @@ merges.
 
 ## Current upstream work
 
-I have four open upstream pull requests as of October 30, 2026.
+I have five open upstream pull requests as of October 30, 2026.
+
+- **Apple Mail [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351):**
+  I corrected an Inbox lookup that mistook Proton for Gmail because both expose
+  an All Mail folder. The fix identifies Gmail by its receiving server and
+  preserves the requested Inbox for other providers. Live checks confirmed
+  that Proton returns the received Inbox copy and Gmail retains its existing
+  lookup behavior.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
