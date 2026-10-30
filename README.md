@@ -18,10 +18,14 @@ to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
 
 ## Selected open-source work
 
-I've authored 35 merged pull requests across 11 open-source projects.
+I've authored 36 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
+- **Accurate Mail lookups:** I corrected an Inbox lookup that could return a
+  different copy from All Mail, and made missing-account errors specific enough
+  to act on. [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351)
+  shipped in [v2.20.44](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.44).
 - **Account-scoped Mail replies:** I bound replies and forwards for numeric
   message IDs to their source account and mailbox, rejecting ambiguous scopes
   and changed message identities. [#350](https://github.com/sweetrb/apple-mail-mcp/pull/350)
@@ -135,6 +139,18 @@ merges.
   and [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60).
 
 ### Reliability and product behavior
+
+- **Apple Mail Inbox routing:** I fixed a Gmail workaround that also matched
+  Proton because both expose an All Mail folder. Search, listing, and recent-mail
+  statistics now check the receiving server before applying that workaround,
+  preserving the requested Inbox for other providers. I also distinguished a
+  missing account from a missing mailbox without relaxing explicit scope.
+  [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351) merged on October 30
+  and shipped in [v2.20.44](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.44).
+  Live checks confirmed Proton Inbox routing and retained Gmail behavior;
+  missing-account handling has regression-test coverage. All seven applicable
+  upstream checks passed. This fixes source lookup, not the separate loss of
+  reply relationships during cross-client draft synchronization.
 
 - **Apple Mail scoped replies and forwards:** I added explicit source-account
   and mailbox selection in
@@ -251,14 +267,7 @@ merges.
 
 ## Current upstream work
 
-I have five open upstream pull requests as of October 30, 2026.
-
-- **Apple Mail [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351):**
-  I corrected an Inbox lookup that mistook Proton for Gmail because both expose
-  an All Mail folder. The fix identifies Gmail by its receiving server and
-  preserves the requested Inbox for other providers. Live checks confirmed
-  that Proton returns the received Inbox copy and Gmail retains its existing
-  lookup behavior.
+I have four open upstream pull requests as of October 30, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
