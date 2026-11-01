@@ -18,10 +18,15 @@ to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
 
 ## Selected open-source work
 
-I've authored 37 merged pull requests across 11 open-source projects.
+I've authored 38 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes.
 
+- **Clearer Mail delivery outcomes:** I preserved accepted and rejected
+  recipients when SMTP accepts only part of a message, distinguished an unknown
+  delivery outcome from a definite failure, and bound numeric reply sources to
+  their accounts in [#357](https://github.com/sweetrb/apple-mail-mcp/pull/357),
+  released in [v2.20.49](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.49).
 - **Accurate, efficient Mail lookups:** I corrected an Inbox lookup that could return a
   different copy from All Mail, and made missing-account errors specific enough
   to act on. [#351](https://github.com/sweetrb/apple-mail-mcp/pull/351)
@@ -65,6 +70,14 @@ continuations and credited ports. The latter are not counted as my authored
 merges.
 
 ### Security and trust boundaries
+
+- **Apple Mail SMTP outcomes and source identity:** In
+  [#357](https://github.com/sweetrb/apple-mail-mcp/pull/357), I made partial
+  recipient acceptance and lost final acknowledgments explicit so callers can
+  distinguish them from successful submissions and avoid unsafe full retries.
+  I also bound unscoped numeric reply and forward sources to the correct account
+  and preserved their original MIME quotations. The change shipped in
+  [v2.20.49](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.49).
 
 - **Apple Mail composition:** I fixed silent SMTP fallback, ambiguous sender
   selection, and literal template substitution in
