@@ -77,7 +77,9 @@ merges.
   distinguish them from successful submissions and avoid unsafe full retries.
   I also bound unscoped numeric reply and forward sources to the correct account
   and preserved their original MIME quotations. The change shipped in
-  [v2.20.49](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.49).
+  [v2.20.49](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.49)
+  and remains included in the later
+  [v2.20.50 release](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.50).
 
 - **Apple Mail composition:** I fixed silent SMTP fallback, ambiguous sender
   selection, and literal template substitution in
@@ -292,7 +294,12 @@ merges.
 
 ## Current upstream work
 
-I have four open upstream pull requests as of October 30, 2026.
+I have five open upstream pull requests as of November 1, 2026.
+
+- **Apple Mail [#360](https://github.com/sweetrb/apple-mail-mcp/pull/360):**
+  I proposed aligning the shared skill guidance with the released SMTP outcomes,
+  numeric source scope, and opt-in native-editor requirements. The documentation
+  change is open for review; it does not change runtime behavior.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -367,4 +374,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated October 30, 2026._
+_Updated November 1, 2026._
