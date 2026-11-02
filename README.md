@@ -18,10 +18,18 @@ to me and [sweetrb/apple-mail-mcp](https://github.com/sweetrb/apple-mail-mcp).
 
 ## Selected open-source work
 
-I've authored 38 merged pull requests across 11 open-source projects.
+I've authored 39 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
-Photos, and Notes.
+Photos, and Notes; those continuations are not included in my authored count.
 
+- **Bounded Mail attachments:** I limited inline attachment results to 3 MiB
+  of decoded data and added checks against incomplete reads. Rob Sweet carried
+  my [#362](https://github.com/sweetrb/apple-mail-mcp/pull/362) forward in
+  [#365](https://github.com/sweetrb/apple-mail-mcp/pull/365), preserving my
+  authorship. The change shipped in
+  [v2.20.51](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.51)
+  and remains in the latest release,
+  [v2.20.52](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.52).
 - **Clearer Mail delivery outcomes:** I preserved accepted and rejected
   recipients when SMTP accepts only part of a message, distinguished an unknown
   delivery outcome from a definite failure, and bound numeric reply sources to
@@ -70,6 +78,18 @@ continuations and credited ports. The latter are not counted as my authored
 merges.
 
 ### Security and trust boundaries
+
+- **Apple Mail attachment reads:** I bounded decoded inline results to 3 MiB,
+  with larger attachments directed to `save-attachment` and the separate
+  25 MiB IMAP save limit unchanged. The change validates the native file being
+  read, checks IMAP part completeness, and accounts for the full serialized
+  response. Rob Sweet carried my commit from
+  [#362](https://github.com/sweetrb/apple-mail-mcp/pull/362) into
+  [#365](https://github.com/sweetrb/apple-mail-mcp/pull/365), preserving its
+  authorship; #362 closed unmerged. It shipped in
+  [v2.20.51](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.51).
+  Synthetic fixtures and a local protocol server cover the new inline path;
+  live-provider behavior was not tested.
 
 - **Apple Mail SMTP outcomes and source identity:** In
   [#357](https://github.com/sweetrb/apple-mail-mcp/pull/357), I made partial
@@ -158,6 +178,12 @@ merges.
   and [Apple Photos #60](https://github.com/sweetrb/apple-photos-mcp/pull/60).
 
 ### Reliability and product behavior
+
+- **Shared Mail skill guidance:** I aligned the shared skill with SMTP delivery
+  outcomes, numeric reply-source scope, and native-editor requirements in
+  [#360](https://github.com/sweetrb/apple-mail-mcp/pull/360). This merged
+  documentation change does not alter runtime behavior and is included in
+  [v2.20.51](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.51).
 
 - **Efficient Mail lookups:** I cached receiving-server lookups alongside
   mailbox names, sharing their expiration and invalidation while preserving
@@ -294,12 +320,7 @@ merges.
 
 ## Current upstream work
 
-I have five open upstream pull requests as of November 1, 2026.
-
-- **Apple Mail [#360](https://github.com/sweetrb/apple-mail-mcp/pull/360):**
-  I proposed aligning the shared skill guidance with the released SMTP outcomes,
-  numeric source scope, and opt-in native-editor requirements. The documentation
-  change is open for review; it does not change runtime behavior.
+I have four open upstream pull requests as of November 2, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -374,4 +395,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated November 1, 2026._
+_Updated November 2, 2026._
