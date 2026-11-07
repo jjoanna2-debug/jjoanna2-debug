@@ -422,4 +422,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated November 7, 2026. Project images link to their upstream repositories; the descriptions identify my contributions._
+_Updated November 7, 2026._
