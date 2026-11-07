@@ -28,7 +28,7 @@ Photos, and Notes; those continuations are not included in my authored count.
 
 ### Apple Mail · From composition to delivery
 
-[![Apple Mail MCP repository](https://opengraph.githubassets.com/37b976353960cc978f74136e03b452a32c9f1e092f9be8e57193d0c8b6be87a8/sweetrb/apple-mail-mcp)](https://github.com/sweetrb/apple-mail-mcp)
+[![Apple Mail: composition, identity, and delivery](assets/mail.svg)](https://github.com/sweetrb/apple-mail-mcp)
 
 I work across the boundaries that make email deceptively difficult: sender
 identity, reply ancestry, native formatting, attachment reads, and uncertain
@@ -76,7 +76,7 @@ the transport and filesystem rules underneath it.
 
 ### Native apps · Predictable behavior
 
-[![IINA media player repository](https://opengraph.githubassets.com/48e19da8f000d2581918d6cb8e610a5553fda8287785d8b7e392311fa9e4e114/iina/iina)](https://github.com/iina/iina)
+[![Native applications: the details behind reliability](assets/native.svg)](https://github.com/iina/iina)
 
 - **Reliable shutdown:** I moved blocking gateway validation off the session
   thread in [Retransmission #256](https://github.com/retransmission/retransmission/pull/256),
@@ -90,7 +90,7 @@ the transport and filesystem rules underneath it.
   [IINA #6189](https://github.com/iina/iina/pull/6189).
 ### Developer tools · Installation through everyday use
 
-[![LinkedIn MCP server repository](https://opengraph.githubassets.com/9c5e52a3174ee3fb5980742fc24590796d367677560d64ebe74e121db63543cb/stickerdaniel/linkedin-mcp-server)](https://github.com/stickerdaniel/linkedin-mcp-server)
+[![Developer tools: from a fresh install to daily use](assets/tools.svg)](https://github.com/stickerdaniel/linkedin-mcp-server)
 
 I fixed nested batch-output paths in the Rust CLI and
   Python binding of [liteparse #313](https://github.com/run-llama/liteparse/pull/313),
@@ -366,7 +366,7 @@ I have **four open upstream pull requests** as of November 7, 2026.
 
 ## Featured repository
 
-[![Repository tooling and automation lab](https://opengraph.githubassets.com/c66fb6d11c8b68d8db8d16a004edfcdadb062553ef10709faaae22fabfd9d3f0/jjoanna2-debug/test-project-tbd)](https://github.com/jjoanna2-debug/test-project-tbd)
+[![My repository: tooling built in Rust](assets/lab.svg)](https://github.com/jjoanna2-debug/test-project-tbd)
 
 [`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is
 my Rust 2024 lab for repository tooling and automation. It has no runtime

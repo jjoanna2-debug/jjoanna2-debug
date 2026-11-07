@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+  <title id="title">NATIVE APPLICATIONS</title>
+  <desc id="desc">The details behind reliability. IINA · Markdown Preview · Retransmission</desc>
+  <rect width="1000" height="300" rx="18" fill="#101820"/>
+  <path d="M0 280H1000" stroke="#bba0ff" stroke-width="5"/>
+  <circle cx="940" cy="30" r="150" fill="none" stroke="#bba0ff" stroke-opacity=".16" stroke-width="28"/>
+  <circle cx="940" cy="30" r="95" fill="none" stroke="#bba0ff" stroke-opacity=".25" stroke-width="2"/>
+  <text x="44" y="68" fill="#bba0ff" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="3">NATIVE APPLICATIONS</text>
+  <text x="44" y="147" fill="#f1f5f8" font-family="Arial, sans-serif" font-size="43" font-weight="700">The details behind reliability.</text>
+  <text x="44" y="204" fill="#b8c7d2" font-family="Arial, sans-serif" font-size="24">IINA · Markdown Preview · Retransmission</text>
+</svg>
