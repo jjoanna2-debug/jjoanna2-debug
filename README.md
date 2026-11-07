@@ -1,5 +1,9 @@
 # Jean-Claude Joanna
 
+**Open-source security · Native macOS · Developer tools**
+
+[Selected work](#selected-open-source-work) · [Current contributions](#current-upstream-work) · [My repository](#featured-repository) · [Work with me](#sponsorship-and-engineering-work)
+
 I work on open-source security and reliability, from native macOS apps to
 Node.js services and GitHub Actions. I use Rust, Swift, TypeScript, and Python
 to fix the details that shape whether software can be trusted: which account
@@ -22,6 +26,20 @@ I've authored 39 merged pull requests across 11 open-source projects.
 Maintainers have also adopted and ported my work across Apple Mail, Numbers,
 Photos, and Notes; those continuations are not included in my authored count.
 
+### Apple Mail · From composition to delivery
+
+[![Apple Mail MCP repository](https://opengraph.githubassets.com/37b976353960cc978f74136e03b452a32c9f1e092f9be8e57193d0c8b6be87a8/sweetrb/apple-mail-mcp)](https://github.com/sweetrb/apple-mail-mcp)
+
+I work across the boundaries that make email deceptively difficult: sender
+identity, reply ancestry, native formatting, attachment reads, and uncertain
+SMTP outcomes. My contributions connect the behavior people see in Mail with
+the transport and filesystem rules underneath it.
+
+**Release reference:** [v2.20.55](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.55), published November 4, 2026. The contribution history below identifies the release in which each change shipped.
+
+<details>
+<summary><strong>Explore the Mail fixes and their releases</strong></summary>
+
 - **Bounded Mail attachments:** I limited inline attachment results to 3 MiB
   of decoded data and added checks against incomplete reads. Rob Sweet carried
   my [#362](https://github.com/sweetrb/apple-mail-mcp/pull/362) forward in
@@ -29,7 +47,7 @@ Photos, and Notes; those continuations are not included in my authored count.
   authorship. The change shipped in
   [v2.20.51](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.51)
   and remains in the latest release,
-  [v2.20.52](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.52).
+  [v2.20.55](https://github.com/sweetrb/apple-mail-mcp/releases/tag/v2.20.55).
 - **Clearer Mail delivery outcomes:** I preserved accepted and rejected
   recipients when SMTP accepts only part of a message, distinguished an unknown
   delivery outcome from a definite failure, and bound numeric reply sources to
@@ -54,6 +72,12 @@ Photos, and Notes; those continuations are not included in my authored count.
 - **Mail delivery and privacy:** I fixed silent SMTP fallback, ambiguous sender
   selection, and literal template substitution while preserving Bcc privacy in
   [#329](https://github.com/sweetrb/apple-mail-mcp/pull/329).
+</details>
+
+### Native apps · Predictable behavior
+
+[![IINA media player repository](https://opengraph.githubassets.com/48e19da8f000d2581918d6cb8e610a5553fda8287785d8b7e392311fa9e4e114/iina/iina)](https://github.com/iina/iina)
+
 - **Reliable shutdown:** I moved blocking gateway validation off the session
   thread in [Retransmission #256](https://github.com/retransmission/retransmission/pull/256),
   preserving ownership and diagnostic status.
@@ -64,7 +88,11 @@ Photos, and Notes; those continuations are not included in my authored count.
   document's directory in [Markdown Preview #152](https://github.com/pluk-inc/markdown-preview/pull/152)
   and distinguished invalid URLs from network load failures in
   [IINA #6189](https://github.com/iina/iina/pull/6189).
-- **Developer tools:** I fixed nested batch-output paths in the Rust CLI and
+### Developer tools · Installation through everyday use
+
+[![LinkedIn MCP server repository](https://opengraph.githubassets.com/9c5e52a3174ee3fb5980742fc24590796d367677560d64ebe74e121db63543cb/stickerdaniel/linkedin-mcp-server)](https://github.com/stickerdaniel/linkedin-mcp-server)
+
+I fixed nested batch-output paths in the Rust CLI and
   Python binding of [liteparse #313](https://github.com/run-llama/liteparse/pull/313),
   restored fresh-install initialization for LinkedIn MCP in
   [#854](https://github.com/stickerdaniel/linkedin-mcp-server/pull/854), and
@@ -320,7 +348,7 @@ merges.
 
 ## Current upstream work
 
-I have four open upstream pull requests as of November 2, 2026.
+I have **four open upstream pull requests** as of November 7, 2026.
 
 - **Transmission [#8984](https://github.com/transmission/transmission/pull/8984):**
   my shutdown fix remains open. The same fix has already merged in
@@ -328,11 +356,8 @@ I have four open upstream pull requests as of November 2, 2026.
 
 - **IINA [#6190](https://github.com/iina/iina/pull/6190) and [#6191](https://github.com/iina/iina/pull/6191):**
   I proposed fixes for portable playlist paths and plugin default-branch updates.
-  Both remain open. #6190 is mergeable against `develop`, with path compatibility
-  still under discussion; #6191 has merge conflicts and awaits
-  plugin-maintainer review. Their CI and spelling
-  workflows failed before any jobs ran, so neither fix has been validated by
-  those hosted checks.
+  Both remain open. GitHub currently reports their mergeability as unknown
+  and returns no check results; I do not treat that as a passing CI result.
 
 - **Daytona [#181](https://github.com/daytona/content/pull/181):** I wrote a Sapat
   provider guide covering endpoint control, credentials, generated-artifact
@@ -340,6 +365,8 @@ I have four open upstream pull requests as of November 2, 2026.
   mergeable with a passing DCO check.
 
 ## Featured repository
+
+[![Repository tooling and automation lab](https://opengraph.githubassets.com/c66fb6d11c8b68d8db8d16a004edfcdadb062553ef10709faaae22fabfd9d3f0/jjoanna2-debug/test-project-tbd)](https://github.com/jjoanna2-debug/test-project-tbd)
 
 [`test-project-tbd`](https://github.com/jjoanna2-debug/test-project-tbd) is
 my Rust 2024 lab for repository tooling and automation. It has no runtime
@@ -395,4 +422,4 @@ me spend more time on open-source work.
 
 You can reach me on [LinkedIn](https://us.linkedin.com/in/jeanclaudejoanna).
 
-_Updated November 2, 2026._
+_Updated November 7, 2026. Project images link to their upstream repositories; the descriptions identify my contributions._
